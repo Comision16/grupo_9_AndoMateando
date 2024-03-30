@@ -11,47 +11,39 @@ module.exports = {
       },
       name: {
         type: Sequelize.STRING,
-        allowNull: true,
-    
+        allowNull: false,
       },
       description: {
         type: Sequelize.TEXT,
-        allowNull: true,
-    
+        allowNull: false,
       },
       price: {
         type: Sequelize.INTEGER,
-        allowNull: true,
-    
+        allowNull: false,
       },
       discount: {
         type: Sequelize.INTEGER,
         allowNull: true,
-    
       },
       image: {
-      type: Sequelize.STRING,
-      allowNull: true,
-    
-    },
-    quantityInStock: {
         type: Sequelize.STRING,
         allowNull: true,
-      
+      },
+      quantityInStock: {
+        type: Sequelize.STRING,
+        allowNull: true,
       },
       brand: {
         type: Sequelize.STRING,
         allowNull: true,
-
       },
       tamanio: {
         type: Sequelize.STRING,
         allowNull: true,
-      
-      },color: {
+      },
+      color: {
         type: Sequelize.STRING,
         allowNull: true,
-
       },
       quantityInStock: {
         type: Sequelize.INTEGER,
@@ -75,7 +67,7 @@ module.exports = {
           },
         },
       },
-     compatibilitieId: {
+      compatibilitieId: {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: {
@@ -86,7 +78,7 @@ module.exports = {
       },
       materialsId: {
         type: Sequelize.INTEGER,
- 
+
         allowNull: true,
         references: {
           model: {
@@ -94,7 +86,7 @@ module.exports = {
           },
         },
       },
-   
+
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
