@@ -1,3 +1,4 @@
+const createError = require("http-errors");
 const db = require("../../database/models");
 
 const storeImages = async (images) => {
@@ -6,7 +7,7 @@ const storeImages = async (images) => {
       validate: true,
     });
 
-    return null;
+    return "Las imágenes se almacenaron correctamente";
   } catch (error) {
     return createError(500, error.message);
   }

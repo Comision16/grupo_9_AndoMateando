@@ -1,8 +1,9 @@
+const createError = require("http-errors");
 const db = require("../../database/models");
 
 const storeProduct = async (data) => {
   try {
-    const [
+    const {
       typeproductsId,
       name,
       materialsId,
@@ -16,7 +17,7 @@ const storeProduct = async (data) => {
       tamanio,
       discount,
       description,
-    ] = data;
+    } = data;
 
     const newProduct = await db.Products.create({
       name,
@@ -36,6 +37,8 @@ const storeProduct = async (data) => {
 
     return newProduct;
   } catch (error) {}
+
+  console.log("New product created:", newProduct);
 };
 
 const getProduct = async (id, req) => {
@@ -60,18 +63,22 @@ const getProduct = async (id, req) => {
       },
     });
 
+    if (!product) {
+      throw createError(404, "Product not found");
+    }
+
     const productCustom = {
       ...product.dataValues,
       image: `${req.protocol}://${req.get("host")}/images/productos/${
         product.image
       }`,
-      category: product.category.name,
-      typeproducts: product.typeproducts.name,
+      category: product.category ? product.category.name : null,
+      typeproducts: product.typeproducts ? product.typeproducts.name : null,
     };
 
     return productCustom;
   } catch (error) {
-    return error;
+    return createError(500, error.message);
   }
 };
 

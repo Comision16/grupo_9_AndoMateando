@@ -1,5 +1,5 @@
 const createError = require("http-errors");
-
+const paginate = require("express-paginate");
 const db = require("../../database/models");
 const { getAllCategories } = require("../../services/categories");
 const { storeProduct, getProduct } = require("../../services/products");
@@ -19,7 +19,17 @@ const getAllProducts = async (req, res) => {
         },
       ],
       attributes: ["id", "name"],
+      limit: req.query.limit,
+      offset: req.skip,
     });
+
+    const pagesCount = Math.ceil(count / req.query.limit);
+    const currentPage = req.query.page;
+    const pages = paginate.getArrayPages(req)(
+      pagesCount,
+      pagesCount,
+      req.query.page
+    );
 
     const products = rows.map((product) => {
       return {
@@ -32,7 +42,12 @@ const getAllProducts = async (req, res) => {
 
     return res.status(200).json({
       ok: true,
-      count,
+      meta: {
+        total: count,
+        count: products.length,
+        pages,
+        currentPage,
+      },
       products,
     });
   } catch (error) {
@@ -111,14 +126,14 @@ const createProduct = async (req, res) => {
 
     const imageName = images ? images.map((image) => image.filename) : [];
 
-    const imagesDB = imageName.map((image) => {
-      return {
-        file: image,
+    if (imageName.length) {
+      const imagesDB = imageName.map((name) => ({
+        file: name,
         id_product: product.id,
-      };
-    });
+      }));
 
-    if (imagesDB.length) await storeImages(imagesDB);
+      await storeImages(imagesDB);
+    }
 
     const newProduct = await getProduct(product.id, req);
 

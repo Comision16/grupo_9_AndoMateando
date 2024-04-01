@@ -1,3 +1,4 @@
+const createError = require("http-errors");
 const db = require("../../database/models");
 
 const getAllCategories = async () => {
@@ -6,7 +7,7 @@ const getAllCategories = async () => {
 
     return categories;
   } catch (error) {
-    return error;
+    return createError(500, error.message);
   }
 };
 
