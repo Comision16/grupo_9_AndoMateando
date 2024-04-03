@@ -7,7 +7,7 @@
     "color": "marron",
     "description": "Disfruta de tu mate diario con este mate clásico de alta calidad.",
     "descuento": "0",
-    "images": [],
+    "images": ["2.png"],
     "mainImage": "1.png",
     "marca": "Marca Personal",
     "material": "Madera",
@@ -24,7 +24,7 @@
     "description": "Personaliza tu experiencia de mate con este mate único diseñado según tus preferencias.",
     "descuento": "8",
     "id": 2,
-    "images": [],
+    "images": [""],
     "mainImage": "2.png",
     "marca": "Marca Personal",
     "material": "Vidrio",
@@ -41,7 +41,7 @@
     "description": "Eleva tu ritual de mate con este set que incluye mates elegantes y accesorios a juego.",
     "descuento": 10,
     "id": 3,
-    "images": [],
+    "images": [""],
     "mainImage": "3.png",
     "marca": "Elegance",
     "material": "Metal",
@@ -58,7 +58,7 @@
     "description": "Lleva tu mate contigo a todas partes con este práctico mate de viaje.",
     "descuento": 0,
     "id": 4,
-    "images": [],
+    "images": [""],
     "mainImage": "4.png",
     "marca": "Traveler",
     "material": "Madera",
@@ -75,7 +75,7 @@
     "description": "Experimenta la máxima calidad con este mate premium hecho a mano con materiales de primera.",
     "descuento": 0,
     "id": 5,
-    "images": [],
+    "images": [""],
     "mainImage": "5.png",
     "marca": "Premium",
     "material": "Aluminio",
@@ -92,7 +92,7 @@
     "description": "Descubre la magia de este mate especial con características únicas.",
     "descuento": 15,
     "id": 6,
-    "images": [],
+    "images": [""],
     "mainImage": "6.png",
     "marca": "Exclusive",
     "material": "Madera",
@@ -109,7 +109,7 @@
     "description": "MATE URBANO es un producto innovador dentro del mercado de los mates inteligentes. Se compone de un mate plástico de alta calidad y una bombilla saca-yerba única por su diseño y su doble función: filtrar y sacar toda la yerba en un instante al momento de limpiar el mate.",
     "descuento": 10,
     "id": 7,
-    "images": [],
+    "images": [""],
     "mainImage": "plastico2.jpeg",
     "marca": "Urbano",
     "material": "Plástico",
@@ -126,7 +126,7 @@
     "description": "Mate Giroscopo / Giroscopio, por fuera impresion3D Material: PLA (Ecoamigable), por dentro mate plastico inyectado Material PP (Polipropileno) , removible para su mejor limpieza.",
     "descuento": 30,
     "id": 8,
-    "images": [],
+    "images": [""],
     "mainImage": "pastico3.jpeg",
     "marca": "Coordenadas 3D",
     "material": "Madera",
@@ -143,7 +143,7 @@
     "description": "Mate Giroscopo / Giroscopio, por fuera impresion3D Material: PLA (Ecoamigable), por dentro mate plastico inyectado Material PP (Polipropileno) , removible para su mejor limpieza.",
     "descuento": 0,
     "id": 9,
-    "images": [],
+    "images": [""],
     "mainImage": "pastico1.jpeg",
     "marca": "Coordenadas 3D",
     "material": "Plastico",
@@ -166,7 +166,7 @@
     "tamanio": "32",
     "descuento": "10",
     "mainImage": "vidrio2.jpeg",
-    "images": [],
+    "images": [""],
     "description": "La marca argentina continúa su desarrollo como empresa líder en la fabricación de productos térmicos hace ya 75 años. El diseño y la practicidad de los productos Lumilagro demuestran una esmerada combinación entre experiencia e innovación permanente. La calidad de este termo te brinda confianza y se va a transformar en el compañero ideal de tardes de estudio o juntadas con amigos. La temperatura justa, "
   },
   {
@@ -183,7 +183,7 @@
     "tamanio": "31",
     "descuento": "20",
     "mainImage": "vidrio.jpeg",
-    "images": [],
+    "images": [""],
     "description": "Eligiendo cualquiera de los productos CONCIENCIA, estás eligiendo colaborar con: TECHO, Fundación Huésped, Fundación Ruta 40 y la Cooperadora del Hospital de Niños Ricardo Gutierrez. "
   },
   {
@@ -200,7 +200,7 @@
     "tamanio": "35",
     "descuento": "10",
     "mainImage": "plastico.jpeg",
-    "images": [],
+    "images": [""],
     "description": "Características Marca Lumilagro Modelo Terra Capacidad 650 mL Material del interior Vidrio Material del exterior Plástico Mantiene contenido frío por 8 h Mantiene contenido caliente por 24 h Sistema de apertura de tapa Tapon Lumilagro Manija Sí Tapa Sí"
   },
   {
@@ -217,7 +217,8 @@
     "tamanio": "35",
     "descuento": "0",
     "mainImage": "metal.jpeg",
-    "images": [],
+    "images": [""],
+
     "description": "Termo de acero 18/8 (sus304) inoxidable, con doble capa. Totalmente a prueba de fugas, robusto y elegante.Tapón cebador . Práctica manija plegable. Doble Tapa aislante que se pueden usan como 2 tazas. Mantiene bebidas frías y calientes x más tiempo. "
   },
   {
@@ -234,7 +235,8 @@
     "tamanio": "20",
     "descuento": "25",
     "mainImage": "tela_negra.jpeg",
-    "images": [],
+    "images": [""],
+    
     "description": " Diseñadas en ecocuero grueso de excelente calidad Cierre reforzado de fácil apertura Interior plastificado para evitar pérdidas de yerba y azucar, hipoalergenico estructura piramidal con base plana que le brinda un soporte firme y evita que se caiga el sobre Colores disponibles: Negro "
   },
   {
@@ -251,7 +253,8 @@
     "tamanio": "20",
     "descuento": "25",
     "mainImage": "tela_rosa.jpeg",
-    "images": [],
+    "images": [""],
+
     "description": "Set yerbera y azucarera de tela impermeable y lavable Cierre anti vuelco Capacidad: 250 grs. yerbera y 170 grs. azucarera Medidas yerbera: 20cm x 13cm Medida... "
   },
   {
@@ -268,7 +271,8 @@
     "tamanio": "20",
     "descuento": "25",
     "mainImage": "plastica_2.jpeg",
-    "images": [],
+    "images": [""],
+    
     "description": "Diseñadas en ecocuero grueso de excelente calidad Cierre reforzado de fácil apertura Interior plastificado para evitar pérdidas de yerba y azucar, hipoalergenico estructura piramidal con base plana que le brinda un soporte firme y evita que se caiga el sobre Colores disponibles: Negro "
   },
   {
@@ -285,7 +289,8 @@
     "tamanio": "70",
     "descuento": "5",
     "mainImage": "rojo.jpeg",
-    "images": [],
+    "images": [""],
+
     "description": "Categorías:Set de mates para Dama, Set materos con cartera, Todos los productos. Etiquetas:Bombilla, Mate, Producto, Set de mate, Set de mates para regalar, Set para dama, Yerbera y azucarera"
   },
   {
@@ -302,7 +307,8 @@
     "tamanio": "80",
     "descuento": "10",
     "mainImage": "gris.jpeg",
-    "images": [],
+    "images": [""],
+
     "description": "Categorías:Set de mates para Dama, Set materos con cartera, Todos los productos.Etiquetas:Bombilla, Mate, Producto, Set de mate, Set de mates para regalar, Set para dama, Yerbera y azucarera"
   },
   {
@@ -318,8 +324,8 @@
     "capacidad": "350 ML",
     "tamanio": "10",
     "descuento": "10",
+    "images": [""],
     "mainImage": null,
-    "images": [],
     "description": "NUEVO MATE"
   }
 ]

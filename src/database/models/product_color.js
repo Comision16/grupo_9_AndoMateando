@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   product_color.init({
-    productId: DataTypes.INTEGER,
+    productsId: DataTypes.STRING,
     colorId: DataTypes.INTEGER
   }, {
     sequelize,

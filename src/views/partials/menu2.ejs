@@ -1,0 +1,83 @@
+
+<section class="menu-3-armatuequipo">
+    <article  class="menu-3-armatuequipo-article">
+        <% const termoProducts = productsarmatuequipos.filter(productsarmatuequipo => productsarmatuequipo.producto === "termo") %>
+      <% if (termoProducts.length > 0) { %>
+      <% termoProducts.forEach(productsarmatuequipo => { %>
+        <img src="/images/productos/<%= productsarmatuequipo.mainImage %>" alt="" height="70px">
+        <h1 class="letra-menu2-h1"><%= productsarmatuequipo.name %></h1>
+        <p class="letra-menu2-p">$<%= productsarmatuequipo.precio %></p>
+      <% }) %>
+      <% } else { %>
+      <div>
+        <img src="/images/productos/icono-termo.jpeg" alt="Imagen no encontrada" height="70px">
+        <h1 class="letra-menu2-h1">termo</h1>
+       
+      </div>
+      <% } %>
+      </article>  
+      <article class="menu-3-armatuequipo-article">
+        <% const mateProducts = productsarmatuequipos.filter(product => product.producto === "mate") %>
+      <% if (mateProducts.length > 0) { %>
+      <% mateProducts.forEach(productsarmatuequipo => { %>
+        <img src="/images/productos/<%= productsarmatuequipo.mainImage %>" alt="" height="70px">
+        <h1 class="letra-menu2-h1"><%= productsarmatuequipo.name %></h1>
+        <p class="letra-menu2-p">$<%= productsarmatuequipo.precio %></p>
+      <% }) %>
+      <% } else { %>
+      <div>
+        <img src="/images/productos/icono-mate.jpeg" alt="Imagen no encontrada" height="70px">
+        <h1 class="letra-menu2-h1">termo</h1>
+      </div>
+      <% } %>
+      </article class="menu-3-armatuequipo-article"> 
+      
+      <article class="menu-3-armatuequipo-article">
+        <% const yerberoProducts = productsarmatuequipos.filter(product => product.producto === "yerbero") %>
+      <% if (yerberoProducts.length > 0) { %>
+      <% yerberoProducts.forEach(productsarmatuequipo => { %>
+        <img src="/images/productos/<%= productsarmatuequipo.mainImage %>" alt="" height="70px">
+        <h1 class="letra-menu2-h1"><%= productsarmatuequipo.name %></h1>
+        <p class="letra-menu2-p">$<%= productsarmatuequipo.precio %></p>
+      <% }) %>
+      <% } else { %>
+      <div>
+        <img src="/images/productos/icono-yerbero.jpeg" alt="Imagen no encontrada" height="70px">
+        <h1 class="letra-menu2-h1">yerbero</h1>
+      </div>
+      <% } %>
+      </article>
+      
+  
+       <article class="menu-3-armatuequipo-article">
+        <% const bombillaProducts = productsarmatuequipos.filter(product => product.producto === "bombilla") %>
+      <% if (bombillaProducts.length > 0) { %>
+      <% bombillaProducts.forEach(productsarmatuequipo => { %>
+        <img src="/images/productos/<%= productsarmatuequipo.mainImage %>" alt="" height="70px">
+        <h1 class="letra-menu2-h1"><%= productsarmatuequipo.name %></h1>
+        <p class="letra-menu2-p">$<%= productsarmatuequipo.precio %></p>
+      <% }) %>
+      <% } else { %>
+      <div>
+        <img src="/images/productos/icono-bombilla.jpeg" alt="Imagen no encontrada" height="70px">
+        <h1 class="letra-menu2-h1">termo</h1>
+      </div>
+      <% } %>
+      </article>
+      <article class="menu-3-armatuequipo-article">
+        <% const bolsoProducts = productsarmatuequipos.filter(product => product.producto === "bolso") %>
+      <% if (bolsoProducts.length > 0) { %>
+      <% bolsoProducts.forEach(productsarmatuequipo => { %>
+        <img src="/images/productos/<%= productsarmatuequipo.mainImage %>" alt="" height="70px">
+        <h1 class="letra-menu2-h1"><%= productsarmatuequipo.name %></h1>
+        <p class="letra-menu2-p">$<%= productsarmatuequipo.precio %></p>
+      <% }) %>
+      <% } else { %>
+      <div>
+        <img src="/images/productos/icono-bolso.jpeg" alt="Imagen no encontrada" height="70px">
+        <h1 class="letra-menu2-h1">bolso</h1>
+      </div>
+      <% } %>
+      </article>
+    </section> 
+</section>

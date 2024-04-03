@@ -34,6 +34,11 @@ module.exports = {
       allowNull: true,
     
     },
+    imagenes: {
+      type: Sequelize.STRING,
+      allowNull: false,
+    
+    },
     quantityInStock: {
         type: Sequelize.STRING,
         allowNull: true,
@@ -48,10 +53,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true,
       
-      },color: {
-        type: Sequelize.STRING,
-        allowNull: true,
-
       },
       quantityInStock: {
         type: Sequelize.INTEGER,
@@ -63,6 +64,15 @@ module.exports = {
         references: {
           model: {
             tableName: "Categories",
+          },
+        },
+      },
+      colorsId: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
+        references: {
+          model: {
+            tableName: "Colors",
           },
         },
       },
