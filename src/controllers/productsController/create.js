@@ -4,6 +4,7 @@ const db = require("../../database/models");
 
 module.exports = (req, res) => {
   const errors = validationResult(req);
+
   const mainImage = req.files.mainImage;
   const images = req.files.images;
 
