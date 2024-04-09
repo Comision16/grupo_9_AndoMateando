@@ -9,6 +9,7 @@ const {
 const {
   getAllUsuarios,
   getOneUsuarios,
+  checkEmail,
 } = require("../controllers/apis/usuariosApiController");
 const router = express.Router();
 
@@ -26,4 +27,5 @@ router.post(
   ]),
   createProduct
 );
+router.get("/users/check-email", checkEmail);
 module.exports = router;
