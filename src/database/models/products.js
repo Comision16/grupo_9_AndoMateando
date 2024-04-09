@@ -32,9 +32,15 @@ module.exports = (sequelize, DataTypes) => {
   }
   Products.init(
     {
+<<<<<<< HEAD
       name: { type: DataTypes.STRING, allowNull: true },
       description: { type: DataTypes.TEXT, allowNull: true },
       price: { type: DataTypes.INTEGER, allowNull: true },
+=======
+      name: { type: DataTypes.STRING, allowNull: false },
+      description: { type: DataTypes.TEXT, allowNull: false },
+      price: { type: DataTypes.INTEGER, allowNull: false },
+>>>>>>> b97b600c6010528ba174cb998bd23efcea2e7d38
       discount: { type: DataTypes.INTEGER, allowNull: true },
       brand: { type: DataTypes.STRING, allowNull: true },
       tamanio: { type: DataTypes.STRING, allowNull: true },

@@ -40,6 +40,8 @@ module.exports = [
         .then((user) => {
           if (user) {
             return Promise.reject();
+          } else {
+            return Promise.resolve();
           }
         })
         .catch((error) => {

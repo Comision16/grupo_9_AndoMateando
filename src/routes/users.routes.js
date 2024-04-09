@@ -12,6 +12,7 @@ const userRegisterValidator = require("../validations/user-register-validator");
 const userLoginValidator = require("../validations/user-login-validator");
 const checkUserLogin = require("../middlewares/checkUserLogin");
 const checkAuthUser = require("../middlewares/checkAuthUser");
+const perfilUpdate = require("../controllers/usersController/perfilUpdate");
 const router = express.Router();
 
 /* /usuarios */
@@ -21,5 +22,7 @@ router
   .post("/ingreso", userLoginValidator, processLogin)
   .post("/registro", userRegisterValidator, processRegister)
   .get("/salir", logout)
-  .get("/perfil", checkUserLogin, profile);
+  .get("/perfil", checkUserLogin, profile)
+  
+  .put('/actualizarPerfil/:id', perfilUpdate)
 module.exports = router;

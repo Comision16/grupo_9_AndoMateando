@@ -22,25 +22,30 @@
             <h4 class="card-title">Registro de usuario</h4>
           </div>
           <div class="card-body">
-            <form action="" class="main-form" method="POST">
+            <form action="" class="main-form" method="POST" id="form-register">
+              <div class="col-12">
+                <div class="alert alert-danger" id="msg-error" hidden>
+                  Todos los campos son obligatorios
+                </div>
+              </div>
               <div class="form-group">
                 <label for="name" class="form-label">Nombre</label>
                 <input type="text" name="name" class="form-control <%= locals.errors && errors.name ? 'is-invalid' : '' %>" id="name" value="<%= locals.old && old.name ? old.name : '' %>" />
-                <small class="error-message">
+                <small class="error-message" id="error-name">
                   <%= locals.errors && errors.name ? errors.name.msg : '' %>
                 </small>
               </div>
               <div class="form-group">
                 <label for="surname" class="form-label">Apellido</label>
                 <input type="text" name="surname" class="form-control <%= locals.errors && errors.surname ? 'is-invalid' : '' %>" id="surname" value="<%= locals.old && old.surname ? old.surname : '' %>" />
-                <small class="error-message">
+                <small class="error-message" id="error-surname">
                   <%= locals.errors && errors.surname ? errors.surname.msg : '' %>
                 </small>
               </div>
               <div class="form-group">
                 <label for="email" class="form-label">Correo electrónico</label>
                 <input type="email" name="email" class="form-control <%= locals.errors && errors.email ? 'is-invalid' : '' %>" id="email" placeholder="ando@mateando.com" value="<%= locals.old && old.email ? old.email : '' %>" />
-                <small class="error-message">
+                <small class="error-message" id="error-email">
                   <%= locals.errors && errors.email ? errors.email.msg : '' %>
                 </small>
               </div>
@@ -78,9 +83,9 @@
         
       </section>
     </main>
-    
-
     <%- include('../partials/footer') %>
+
+    <script src="/js/registerValidator.js"></script>
   </body>
 
 </html>

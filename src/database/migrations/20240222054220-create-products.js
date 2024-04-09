@@ -27,6 +27,7 @@ module.exports = {
       },
       image: {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       type: Sequelize.STRING,
       allowNull: true,
@@ -39,6 +40,8 @@ module.exports = {
     },
     quantityInStock: {
 >>>>>>> 4a9d987f86edfd75654f7a74809ef676ff8e7233
+=======
+>>>>>>> b97b600c6010528ba174cb998bd23efcea2e7d38
         type: Sequelize.STRING,
         allowNull: true,
       },
@@ -54,13 +57,19 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> b97b600c6010528ba174cb998bd23efcea2e7d38
       },
       color: {
         type: Sequelize.STRING,
         allowNull: true,
+<<<<<<< HEAD
 =======
       
 >>>>>>> 4a9d987f86edfd75654f7a74809ef676ff8e7233
+=======
+>>>>>>> b97b600c6010528ba174cb998bd23efcea2e7d38
       },
       quantityInStock: {
         type: Sequelize.INTEGER,

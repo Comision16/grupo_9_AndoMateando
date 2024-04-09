@@ -64,7 +64,7 @@ const getProduct = async (id, req) => {
     });
 
     if (!product) {
-      throw createError(404, "Product not found");
+      throw createError(404, "Producto no encontrado");
     }
 
     const productCustom = {

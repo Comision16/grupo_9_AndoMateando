@@ -27,12 +27,60 @@ module.exports = {
           name: "Vidrio",
           createdAt: new Date(),
           updatedAt: new Date(),
-        }, {
+        }, 
+        {
           name: "Hierbas",
           createdAt: new Date(),
           updatedAt: new Date(),
         }, {
           name: "Tela",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        }, {
+          name: "Acero",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Acero Inoxidable",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Acero Inox",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "Alpaca",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Cobre",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Bronce",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Cuero",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Semi Cuero",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "matelasse",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Cuero Eco",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Poliéster",
           createdAt: new Date(),
           updatedAt: new Date(),
         },{
