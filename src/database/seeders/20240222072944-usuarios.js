@@ -8,13 +8,13 @@ module.exports = {
     await queryInterface.bulkInsert(
       "Users",
       [
-         {
+        {
           name: "Admin",
           surname: "AndoMateando",
           email: "admin@gmail.com",
           password: bcryptjs.hashSync(process.env.PASSWORD_ADMIN, 10),
           roleId: 1,
-          age:40,
+          age: 40,
           phone: 33451561,
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -25,7 +25,7 @@ module.exports = {
           email: "user@gmail.com",
           password: bcryptjs.hashSync(process.env.PASSWORD_ADMIN, 10),
           roleId: 2,
-          age:40,
+          age: 40,
           phone: 3364515025,
           createdAt: new Date(),
           updatedAt: new Date(),

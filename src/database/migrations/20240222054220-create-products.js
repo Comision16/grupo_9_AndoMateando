@@ -91,7 +91,6 @@ module.exports = {
       },
       materialsId: {
         type: Sequelize.INTEGER,
-
         allowNull: true,
         references: {
           model: {
@@ -99,7 +98,6 @@ module.exports = {
           },
         },
       },
-
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
