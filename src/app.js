@@ -8,6 +8,7 @@ var logger = require("morgan");
 const methodOverride = require("method-override");
 const session = require("express-session");
 const cookieCheck = require("./middlewares/cookieCheck");
+const paginate = require("express-paginate");
 
 var indexRouter = require("./routes/index.routes");
 var usersRouter = require("./routes/users.routes");
@@ -16,6 +17,7 @@ const apisRouter = require("./routes/apis.routes");
 
 const transferLocals = require("./middlewares/transferLocals");
 const checkUserLogin = require("./middlewares/checkUserLogin");
+
 var app = express();
 
 // view engine setup
@@ -40,6 +42,8 @@ app
   )
   .use(cookieCheck)
   .use(transferLocals)
+
+  .use(paginate.middleware(10, 50))
   /* --------------------- RUTAS ----------------- */
 
   .use("/", indexRouter)

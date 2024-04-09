@@ -4,8 +4,10 @@ module.exports = [
     check('name')
         .notEmpty().withMessage('El nombre es obligatorio'),
         check('typeproductsId')
-        .notEmpty().withMessage('El tipod de producto es obligatorio'),
+        .notEmpty().withMessage('El tipo de producto es obligatorio'),
     check('categoryId')
+    .notEmpty().withMessage('El material de producto es obligatorio'),
+    check('materialsId')
         .notEmpty().withMessage('La categoría es requerida'),
     check('price')
         .notEmpty().withMessage('El precio es requerido'),  

@@ -12,6 +12,7 @@
           class="logo"
         />
       </section>
+    
       <section class="form-section-register">
 
    
@@ -21,12 +22,12 @@
                 <h4 class="card-title">Perfil de usuario</h4>
               </div>
               <div class="form-check">
-                <form action="/usuarios/perfil" class="row" method="POST">
+                <form action="/usuarios/actualizarPerfil/<%= user.id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data" >
                   <div class="form-check">
-                    <label for="name" class="form-label" value="user.name">Nombre</label>
+                    <label for="name" class="form-label" >Nombre</label>
                     <input type="text" name="name"
                       class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>" id="name"
-                      value="<%= locals.old && old.name ? old.name : null %>" />
+                      value="<%= user.name %>" />
                     <small class="text-danger ms-2">
                       <%= locals.errors && errors.name ? errors.name.msg : null %>
                     </small>
@@ -35,22 +36,50 @@
                     <label for="surname" class="form-label">Apellido</label>
                     <input type="text" name="surname"
                       class="form-control <%= locals.errors && errors.surname ? 'is-invalid' : null %>" id="surname"
-                      value="<%= locals.old && old.surname ? old.surname : null %>" />
+                      value="<%= user.surname %> " />
                     <small class="text-danger ms-2">
                       <%= locals.errors && errors.surname ? errors.surname.msg : null %>
                     </small>
                   </div>
                   <div class="form-check">
-                    <label for="email" class="form-label">Correo electrónico</label>
+                    <label for="email" class="form-label">Email</label>
                     <input type="email" name="email"
                       class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>" id="email"
-                      placeholder="name@example.com" value="<%= locals.old && old.email ? old.email : null %>" />
+                      placeholder="name@example.com" value="<%= user.email %>" />
                     <small class="text-danger ms-2">
                       <%= locals.errors && errors.email ? errors.email.msg : null %>
                     </small>
                   </div> 
-                  <div class="form-group">
-                    <button  class="main-btn">Actualizar</button>
+                  <div class="form-check">
+                    <label for="age" class="form-label">Edad</label>
+                    <input type="age" name="age"
+                      class="form-control <%= locals.errors && errors.age ? 'is-invalid' : null %>" id="age"
+                       value="<%= user.age   %>  años" />
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.age ? errors.age.msg : null %>
+                    </small>
+                  </div> 
+                  <div class="form-check">
+                    <label for="phone" class="form-label">Telefono</label>
+                    <input type="phone" name="phone"
+                      class="form-control <%= locals.errors && errors.phone ? 'is-invalid' : null %>" id="phone"
+                      value="<%= user.phone %>" />
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.phone ? errors.phone.msg : null %>
+                    </small>
+                  </div> 
+                  <div class="form-check">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" name="password"
+                      class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>" id="password"
+                      value="<%= user.password %>" />
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.password ? errors.phone.msg : null %>
+                    </small>
+                  </div> 
+
+                  <div class="form-check ">
+                    <button  class="form-check main-btn  ">Actualizar</button>
                   </div>
                 </form>
               </div>
@@ -59,11 +88,14 @@
         
       </section>
         
-      
+ 
           
       
     </main>
-    <%- include('../partials/footer') %>
+    <section class="borde_inferior_footer">
+      <%- include('../partials/footer') %>
+    </section>
+    
   </body>
 
 </html>

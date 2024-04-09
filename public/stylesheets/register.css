@@ -11,23 +11,28 @@
 .logo-section-register {
   text-align: center;
   order: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   margin-left: 30px;
 }
 .logo {
   margin-left: 80px; /* Ajusta el margen derecho según sea necesario */
 }
-
+.form-section-register{
+  position: relative;
+  margin: 10px;
+}
 .form-section-register {
   max-width: 400px;
   width: 100%;
   order: 1;
-  margin: 40px auto 40px auto;
+  margin: 0px auto 0px auto;
   background-color: var(--blanco);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
+  top: -50px ;
+  
 }
 
 .form-section-register:hover {
@@ -48,7 +53,7 @@
 
 .form-group {
   margin-bottom: 15px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .form-label {
@@ -95,6 +100,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition-duration: 0.4s;
+  margin-top: 20px;
  
 }
 

@@ -7,7 +7,9 @@
     "color": "marron",
     "description": "Disfruta de tu mate diario con este mate clásico de alta calidad.",
     "descuento": "0",
-    "images": [],
+    "images": [
+      "2.png"
+    ],
     "mainImage": "1.png",
     "marca": "Marca Personal",
     "material": "Madera",
@@ -24,7 +26,9 @@
     "description": "Personaliza tu experiencia de mate con este mate único diseñado según tus preferencias.",
     "descuento": "8",
     "id": 2,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "2.png",
     "marca": "Marca Personal",
     "material": "Vidrio",
@@ -41,7 +45,9 @@
     "description": "Eleva tu ritual de mate con este set que incluye mates elegantes y accesorios a juego.",
     "descuento": 10,
     "id": 3,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "3.png",
     "marca": "Elegance",
     "material": "Metal",
@@ -58,7 +64,9 @@
     "description": "Lleva tu mate contigo a todas partes con este práctico mate de viaje.",
     "descuento": 0,
     "id": 4,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "4.png",
     "marca": "Traveler",
     "material": "Madera",
@@ -75,7 +83,9 @@
     "description": "Experimenta la máxima calidad con este mate premium hecho a mano con materiales de primera.",
     "descuento": 0,
     "id": 5,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "5.png",
     "marca": "Premium",
     "material": "Aluminio",
@@ -92,7 +102,9 @@
     "description": "Descubre la magia de este mate especial con características únicas.",
     "descuento": 15,
     "id": 6,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "6.png",
     "marca": "Exclusive",
     "material": "Madera",
@@ -109,7 +121,9 @@
     "description": "MATE URBANO es un producto innovador dentro del mercado de los mates inteligentes. Se compone de un mate plástico de alta calidad y una bombilla saca-yerba única por su diseño y su doble función: filtrar y sacar toda la yerba en un instante al momento de limpiar el mate.",
     "descuento": 10,
     "id": 7,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "plastico2.jpeg",
     "marca": "Urbano",
     "material": "Plástico",
@@ -126,7 +140,9 @@
     "description": "Mate Giroscopo / Giroscopio, por fuera impresion3D Material: PLA (Ecoamigable), por dentro mate plastico inyectado Material PP (Polipropileno) , removible para su mejor limpieza.",
     "descuento": 30,
     "id": 8,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "pastico3.jpeg",
     "marca": "Coordenadas 3D",
     "material": "Madera",
@@ -143,7 +159,9 @@
     "description": "Mate Giroscopo / Giroscopio, por fuera impresion3D Material: PLA (Ecoamigable), por dentro mate plastico inyectado Material PP (Polipropileno) , removible para su mejor limpieza.",
     "descuento": 0,
     "id": 9,
-    "images": [],
+    "images": [
+      ""
+    ],
     "mainImage": "pastico1.jpeg",
     "marca": "Coordenadas 3D",
     "material": "Plastico",
@@ -166,7 +184,9 @@
     "tamanio": "32",
     "descuento": "10",
     "mainImage": "vidrio2.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "La marca argentina continúa su desarrollo como empresa líder en la fabricación de productos térmicos hace ya 75 años. El diseño y la practicidad de los productos Lumilagro demuestran una esmerada combinación entre experiencia e innovación permanente. La calidad de este termo te brinda confianza y se va a transformar en el compañero ideal de tardes de estudio o juntadas con amigos. La temperatura justa, "
   },
   {
@@ -183,7 +203,9 @@
     "tamanio": "31",
     "descuento": "20",
     "mainImage": "vidrio.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "Eligiendo cualquiera de los productos CONCIENCIA, estás eligiendo colaborar con: TECHO, Fundación Huésped, Fundación Ruta 40 y la Cooperadora del Hospital de Niños Ricardo Gutierrez. "
   },
   {
@@ -200,7 +222,9 @@
     "tamanio": "35",
     "descuento": "10",
     "mainImage": "plastico.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "Características Marca Lumilagro Modelo Terra Capacidad 650 mL Material del interior Vidrio Material del exterior Plástico Mantiene contenido frío por 8 h Mantiene contenido caliente por 24 h Sistema de apertura de tapa Tapon Lumilagro Manija Sí Tapa Sí"
   },
   {
@@ -217,7 +241,9 @@
     "tamanio": "35",
     "descuento": "0",
     "mainImage": "metal.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "Termo de acero 18/8 (sus304) inoxidable, con doble capa. Totalmente a prueba de fugas, robusto y elegante.Tapón cebador . Práctica manija plegable. Doble Tapa aislante que se pueden usan como 2 tazas. Mantiene bebidas frías y calientes x más tiempo. "
   },
   {
@@ -234,7 +260,9 @@
     "tamanio": "20",
     "descuento": "25",
     "mainImage": "tela_negra.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": " Diseñadas en ecocuero grueso de excelente calidad Cierre reforzado de fácil apertura Interior plastificado para evitar pérdidas de yerba y azucar, hipoalergenico estructura piramidal con base plana que le brinda un soporte firme y evita que se caiga el sobre Colores disponibles: Negro "
   },
   {
@@ -251,7 +279,9 @@
     "tamanio": "20",
     "descuento": "25",
     "mainImage": "tela_rosa.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "Set yerbera y azucarera de tela impermeable y lavable Cierre anti vuelco Capacidad: 250 grs. yerbera y 170 grs. azucarera Medidas yerbera: 20cm x 13cm Medida... "
   },
   {
@@ -268,7 +298,9 @@
     "tamanio": "20",
     "descuento": "25",
     "mainImage": "plastica_2.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "Diseñadas en ecocuero grueso de excelente calidad Cierre reforzado de fácil apertura Interior plastificado para evitar pérdidas de yerba y azucar, hipoalergenico estructura piramidal con base plana que le brinda un soporte firme y evita que se caiga el sobre Colores disponibles: Negro "
   },
   {
@@ -285,7 +317,9 @@
     "tamanio": "70",
     "descuento": "5",
     "mainImage": "rojo.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "Categorías:Set de mates para Dama, Set materos con cartera, Todos los productos. Etiquetas:Bombilla, Mate, Producto, Set de mate, Set de mates para regalar, Set para dama, Yerbera y azucarera"
   },
   {
@@ -302,24 +336,363 @@
     "tamanio": "80",
     "descuento": "10",
     "mainImage": "gris.jpeg",
-    "images": [],
+    "images": [
+      ""
+    ],
     "description": "Categorías:Set de mates para Dama, Set materos con cartera, Todos los productos.Etiquetas:Bombilla, Mate, Producto, Set de mate, Set de mates para regalar, Set para dama, Yerbera y azucarera"
   },
   {
     "id": 20,
-    "producto": "mate",
-    "name": "matematico",
-    "material": "Plastico",
-    "marca": "matiasmartin",
+    "producto": "bombilla",
+    "name": "Bombilla Tiva",
+    "material": "Acero Inoxidable",
+    "marca": "VG hogar",
     "category": "clasicos",
-    "precio": "1800",
-    "color": "marron",
-    "cantidad": "1",
-    "capacidad": "350 ML",
-    "tamanio": "10",
+    "precio": "3500",
+    "color": "bronce",
+    "cantidad": "10",
+    "capacidad": "Sin Definir",
+    "tamanio": "17 cm",
+    "descuento": "0",
+    "images": [
+      ""
+    ],
+    "mainImage": "bombilla_1.jpg",
+    "description": "Bombilla tradicional estilo pico de loro con resorte y virola"
+  },
+  {
+    "id": 21,
+    "producto": "bombilla",
+    "name": "Bombilla Pico De Loro Cuchara",
+    "material": "Acero Inoxidable",
+    "marca": "Matesur",
+    "category": "clasicos",
+    "precio": "8000",
+    "color": "bronce",
+    "cantidad": "7",
+    "capacidad": "Sin Definir",
+    "tamanio": "19,5 cm",
     "descuento": "10",
-    "mainImage": null,
-    "images": [],
-    "description": "NUEVO MATE"
+    "images": [
+      ""
+    ],
+    "mainImage": "bombilla_2.png",
+    "description": "Bombilla tradicional estilo pico de loro con resorte y virola"
+  },
+  {
+    "id": 22,
+    "producto": "bombilla",
+    "name": "Bombilla Acero Inox Loekemeyer Resorte",
+    "material": "Acero",
+    "marca": "Loekemeyer",
+    "category": "barata",
+    "precio": "3000",
+    "color": "bronce",
+    "cantidad": "8",
+    "capacidad": "Sin Definir",
+    "tamanio": "17 cm",
+    "descuento": "0",
+    "images": [
+      ""
+    ],
+    "mainImage": "bombilla_3.jpg",
+    "description": "La Bombilla Acero Inoxidable Autolimpiante Resorte Loekemeyer es el complemento perfecto para disfrutar de un mate de calidad. Con una marca reconocida como Loekemeyer, esta bombilla está fabricada con materiales de alta calidad, como el acero inoxidable, que garantizan su durabilidad y resistencia. Su diseño con resorte permite una limpieza automática, evitando obstrucciones y asegurando un flujo constante de agua caliente. Con un largo de 17 cm, esta bombilla es ideal para disfrutar de un mate sin preocupaciones. No pierdas la oportunidad de adquirir este modelo 654 y disfrutar de una experiencia mateadora única."
+  },
+  {
+    "id": 23,
+    "producto": "bombilla",
+    "name": "Bombilla uruguaya ",
+    "material": "Alpaca",
+    "marca": "madu",
+    "category": "barata",
+    "precio": "2500",
+    "color": "plateado",
+    "cantidad": "8",
+    "capacidad": "Sin Definir",
+    "tamanio": "18 cm",
+    "descuento": "0",
+    "images": [
+      ""
+    ],
+    "mainImage": "bombilla_4.jpg",
+    "description": "Bombilla Uruguaya Mate Alpaca Pico De Loro Artesanal.Características: Material 100% de Alpaca.Terminación Pico de loro Parte inferior estilo Cuchara para fácil vaciado del mate.Al ser 100% de alpaca (y no bañado) esta bombilla se puede pulir y así restaurar fácilmente el colorde la misma."
+  },
+  {
+    "id": 24,
+    "producto": "bombilla",
+    "name": "Bombillas De Colores Para Mate",
+    "material": "Alpaca",
+    "marca": "VG BOUTIQUE",
+    "category": "barata",
+    "precio": "4300",
+    "color": "blanca",
+    "cantidad": "3",
+    "capacidad": "Sin Definir",
+    "tamanio": "17 cm",
+    "descuento": "0",
+    "images": [
+      ""
+    ],
+    "mainImage": "bombilla_5.jpg",
+    "description": "Bombilla para Mate 170mm de Largo Incluye disco Auto Limpiante, Material aluminio Pintado."
+  },
+  {
+    "id": 25,
+    "producto": "bombilla",
+    "name": "BOMBILLA DE ALPACA CHATA",
+    "material": "Alpaca",
+    "marca": "VG BOUTIQUE",
+    "category": "barata",
+    "precio": "3800",
+    "color": "plateado",
+    "cantidad": "7",
+    "capacidad": "Sin Definir",
+    "tamanio": "20 cm",
+    "descuento": "0",
+    "images": [
+      ""
+    ],
+    "mainImage": "bombilla_6.jpg",
+    "description": " bombilla de alpaca chata grande largo (punta a punta): 20,5 cm"
+  },
+  {
+    "id": 26,
+    "producto": "bombilla",
+    "name": "BOMBILLA BROWN",
+    "material": "Acero Inoxidable",
+    "marca": "BROWN ",
+    "category": "elegantes",
+    "precio": "4000",
+    "color": "plateado",
+    "cantidad": "10",
+    "capacidad": "Sin Definir",
+    "tamanio": "22 cm",
+    "descuento": "0",
+    "images": [
+      ""
+    ],
+    "mainImage": "bombilla_7.jpg",
+    "description": "Bombilla de diseño curvo, cómodo y elegante. Incluye una piedra de color miel semitransparente que destacará en tu mate favorito. Incluye 1 cepillo limpiador y se adapta a cualquier tipo de mate."
+  },
+  {
+    "id": 27,
+    "producto": "bombilla",
+    "name": "Bombilla Hoja Aregentina ",
+    "material": "Acero Inoxidable",
+    "marca": "BROWN ",
+    "category": "elegantes",
+    "precio": "5000",
+    "color": "dorado",
+    "cantidad": "10",
+    "capacidad": "Sin Definir",
+    "tamanio": "22 cm",
+    "descuento": "0",
+    "images": [""],
+    "mainImage": "bombilla_8.jpg",
+    "description": "Bombilla Hoja  Argentina  para Mate Argentino La bombilla se creó a partir de la necesidad de tomar mate filtrando las hojas de mate previamente trituradas. Su uso fue necesario cuando los indios guaraníes comenzaron a moler y tostar la yerba para su consumo. Al picar la yerba y disminuir su tamaño, comenzó a molestar en la boca al beber la infusión. De esta forma nació la necesidad de utilizar una bombilla para filtrar el mate.La bombilla y sus partes:La punta: situada en el extremo superior, donde el tomador pone la boca y aspira para beber el mate.El aro:  separa el pico del cuerpo de la bombilla. Se utiliza como decoración.Parte central: es el cuerpo de la bombilla por donde circula el líquido El filtro: situado en el extremo inferior y que se introduce en la hierba de forma que filtre el líquido y mantenga la yerba en el mate. Suele tener forma de paleta, redondeada o forma de muelle y en algunas bombillas se puede desmontar para facilitar su limpieza."
+  },
+  {
+    "id": 28 ,
+    "producto": "bombilla",
+    "name": "Bombilla Dable Virola",
+    "material": "Bronce",
+    "marca": "VG hogar ",
+    "category": "elegantes",
+    "precio": "3500",
+    "color": "plateado",
+    "cantidad": "10",
+    "capacidad": "Sin Definir",
+    "tamanio": "17 cm",
+    "descuento": "0",
+    "images": [""],
+    "mainImage": "bombilla_9.jpg",
+    "description": "Bombilla tradicional estilo pico de loro con resorte y virola de bronce Material: Acero inoxidable de excelente calidad "
+  },
+  {
+    "id": 29,
+    "producto": "bombilla",
+    "name": "Bombilla Pico De Loro ",
+    "material": "Acero Inoxidable",
+    "marca": "BROWN ",
+    "category": "elegantes",
+    "precio": "4500",
+    "color": "plateado",
+    "cantidad": "10",
+    "capacidad": "Sin Definir",
+    "tamanio": "18 cm",
+    "descuento": "0",
+    "images": [""],
+    "mainImage": "bombilla_10.jpg",
+    "description": "CARACTERÍSTICAS DE LA BOMBILLA: Bombilla Tradicional estilo Pico de Loro. Longitud: 18 cm, Material: Acero Inoxidable con Detalles en bronce, Limpia fácil: Desarmable para una limpieza rápida. Apta para filtros de tela para el polvillo."
+  },
+  {
+    "id": 30,
+    "producto": "bolso",
+    "name": "Bolso matero de cuero",
+    "material": "Cuero",
+    "marca": "Apolo",
+    "category": "elegantes",
+    "precio": "25000",
+    "color": "Marron Oscuro",
+    "cantidad": "5",
+    "capacidad": "Sin Definir",
+    "tamanio": "22 cm",
+    "descuento": "0",
+    "images": [""],
+    "mainImage": "bolso_1.jpg",
+    "description": "Bolso matero de 100% cuero, posee tiras para colgar al hombro. En su interior contiene una pequeña tira de cuero que divide el espacio en 2 partes iguales."
+  },
+  {
+    "id": 31,
+    "producto": "bolso",
+    "name": "Canasta matera 4×4 de cuero",
+    "material": "cuero",
+    "marca": "Apolo",
+    "category": "elegantes",
+    "precio": "36000",
+    "color": "Marron Claro",
+    "cantidad": "5",
+    "capacidad": "Sin Definir",
+    "tamanio": "20 cm",
+    "descuento": "0",
+    "images": [""],
+    "mainImage": "bolso_2.jpg",
+    "description": "Canasta matera abierta, 100% de cuero premium y reforzado. Todos los termos entran correctamente en la matera."
+  },
+  {
+    "id": 32,
+    "producto": "bolso",
+    "name": "matelasse",
+    "material": "Acero Inoxidable",
+    "marca": "Madu",
+    "category": "elegantes",
+    "precio": "23000",
+    "color": "negro",
+    "cantidad": "7",
+    "capacidad": "Sin Definir",
+    "tamanio": "25 cm",
+    "descuento": "20",
+    "images": [""],
+    "mainImage": "bolso_3.jpg",
+    "description": "Convierte este bolso mochila de tela matelasse en tu compañero ideal para cualquier aventura. Impermeable y resistente, podrás llevar tus pertenencias cómodamente en la espalda, sin preocuparte por el clima. Su bolsillo delantero te permite tener tus objetos personales a mano y su textura acolchada le da un toque elegante."
+  },
+  {
+    "id": 33,
+    "producto": "bolso",
+    "name": "Bolso Mochila Yuco",
+    "material": "Semi Cuero",
+    "marca": "Yuco",
+    "category": "elegantes",
+    "precio": "20000",
+    "color": "azul",
+    "cantidad": "7",
+    "capacidad": "Sin Definir",
+    "tamanio": " 40 cm",
+    "descuento": "10",
+    "images": [""],
+    "mainImage": "bolso_4.jpg",
+    "description": " Capacidad para llevar 1 termo + accesorios (yerbera, azucarera, mate) Contiene 2 manijas de eco cuero de 10 cm / 3,93 in para llevar de modo clásico Cierre ribeteado con Eco cuero con doble costura, mayor resistencia y terminación estética"
+  },
+  {
+    "id": 34,
+    "producto": "bolso",
+    "name": "Bolso Matero",
+    "material": "Cuero Eco",
+    "marca": "PM Complementos",
+    "category": "elegantes",
+    "precio": "22600",
+    "color": "celeste",
+    "cantidad": "4",
+    "capacidad": "Sin Definir",
+    "tamanio": " 37 cm",
+    "descuento": "5",
+    "images": [""],
+    "mainImage": "bolso_5.jpg",
+    "description": " Capacidad para llevar 1 termo + accesorios (yerbera, azucarera, mate) Contiene 2 manijas de eco cuero de 10 cm / 3,93 in para llevar de modo clásico Cierre ribeteado con Eco cuero con doble costura, mayor resistencia y terminación estética"
+  },
+  {
+    "id": 35,
+    "producto": "bolso",
+    "name": "Bolso Matero Rígido",
+    "material": "Semi Cuero",
+    "marca": "PM Complementos",
+    "category": "elegantes",
+    "precio": "17000",
+    "color": "Marron Oscuro",
+    "cantidad": "4",
+    "capacidad": "Sin Definir",
+    "tamanio": " 37 cm",
+    "descuento": "5",
+    "images": [""],
+    "mainImage": "bolso_6.jpg",
+    "description": "Bolso Matero de Símil Cuero con tapa y correa. Consultá por colores disponibles."
+  },
+  {
+    "id": 36,
+    "producto": "bolso",
+    "name": "Bolso Matero Un Mate",
+    "material": "Semi Cuero",
+    "marca": "Un Mate",
+    "category": "elegantes",
+    "precio": "17000",
+    "color": "verde",
+    "cantidad": "4",
+    "capacidad": "Sin Definir",
+    "tamanio": " 39 cm",
+    "descuento": "10",
+    "images": [""],
+    "mainImage": "bolso_7.jpg",
+    "description": "Mochila Matera tipo militar con la mejor calidad del mercado."
+  },
+  {
+    "id": 37,
+    "producto": "bolso",
+    "name": "Bolso Matero Matera ",
+    "material": "Semi Cuero",
+    "marca": "Un Mate",
+    "category": "elegantes",
+    "precio": "17000",
+    "color": "verde",
+    "cantidad": "9",
+    "capacidad": "Sin Definir",
+    "tamanio": " 38 cm",
+    "descuento": "10",
+    "images": [""],
+    "mainImage": "bolso_8.jpg",
+    "description": "Bolso matero negro para hombre y mujer con base semirrígida y tira regulable confeccionado en tela antihongos y resistente al agua, con amplio compartimento principal sin divisiones y bolsillo externo. Gracias a su diseño clásico, casual y moderno es perfecto para acompañarte a cualquier destino y llevar todo comodamente en tu matera."
+  },
+  {
+    "id": 38,
+    "producto": "bolso",
+    "name": "Bolso Matero Oky ",
+    "material": "Cuero Eco",
+    "marca": "OKi Regalos",
+    "category": "elegantes",
+    "precio": "20000",
+    "color": "rojo",
+    "cantidad": "3",
+    "capacidad": "Sin Definir",
+    "tamanio": " 33 cm",
+    "descuento": "15",
+    "images": [""],
+    "mainImage": "bolso_9.jpg",
+    "description": "El bolso es de ecocuero liso (tela de mochila). Semirígido."
+  },
+  {
+    "id": 39,
+    "producto": "bolso",
+    "name": "Bolso Matero Con Cierre",
+    "material": "Poliéster",
+    "marca": "CDO",
+    "category": "elegantes",
+    "precio": "18000",
+    "color": "Marron Claro",
+    "cantidad": "3",
+    "capacidad": "Sin Definir",
+    "tamanio": " 33 cm",
+    "descuento": "10",
+    "images": [""],
+    "mainImage": "bolso_10.jpg",
+    "description": "- Material: Poliéster. Medidas: 33 x 28 x 14 cm. Set matero con detalle PU. Un bolsillo externo.Interior acolchonado con división para poner un termo y los accesorios de mate o botella. Correa regulable."
   }
 ]
