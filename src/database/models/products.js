@@ -24,9 +24,9 @@ module.exports = (sequelize, DataTypes) => {
         as: "materials",
         foreignKey: "materialsId",
       });
-      Products.belongsTo(models.Colors, {
+      Products.belongsTo(models.Color, {
         as: "colors",
-        foreignKey: "colorsId",
+        foreignKey: "colorId",
       });
     }
   }
@@ -38,7 +38,7 @@ module.exports = (sequelize, DataTypes) => {
       discount: { type: DataTypes.INTEGER, allowNull: true },
       brand: { type: DataTypes.STRING, allowNull: true },
       tamanio: { type: DataTypes.STRING, allowNull: true },
-      color: { type: DataTypes.STRING, allowNull: true },
+      colorId: { type: DataTypes.INTEGER, allowNull: true },
       image: { type: DataTypes.STRING, allowNull: true },
       quantityInStock: { type: DataTypes.STRING, allowNull: true },
       categoryId: { type: DataTypes.INTEGER, allowNull: true },

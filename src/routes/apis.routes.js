@@ -11,6 +11,7 @@ const {
   getOneUsuarios,
   checkEmail,
 } = require("../controllers/apis/usuariosApiController");
+const { addImageProduct, deleteImageProduct, changeImageProduct, getImagesByProduct } = require("../controllers/apis/imagesApiController");
 const router = express.Router();
 
 /* /apis */
@@ -27,5 +28,13 @@ router.post(
   ]),
   createProduct
 );
+
 router.get("/users/check-email", checkEmail);
+
+router.post("/images/:idProduct", upload.any(), addImageProduct)
+router.delete('/images/:idImage', deleteImageProduct)
+router.post("/images/:idProduct/main", upload.any(),changeImageProduct)
+router.get('/images/:idProduct', getImagesByProduct)
+
+
 module.exports = router;
