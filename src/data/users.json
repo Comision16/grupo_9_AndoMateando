@@ -5,7 +5,9 @@
     "surname": "Olmos",
     "email": "jon.ol.23@gmail.com",
     "password": "$2a$10$ffNw.ISgyBw8NUfK2hReE.JTvVeLkrHmTbC5OiMdBrmZf0sUP0QPO",
-    "role": "admin"
+    "role": "admin",
+    "age" : "",
+    "phone": ""
   },
   {
     "id": "c11635be-fcb3-4c45-9a1c-63031eaecd98",
@@ -13,7 +15,9 @@
     "surname": "perez",
     "email": "lucas@gmail.com",
     "password": "$2a$10$qwfPzeuZCbeUGnGg62IDcel1uApvWsAdbSxbRJNF.qNxg6mf3y8xO",
-    "role": "user"
+    "role": "user",
+    "age" : "",
+    "phone": ""
   },
   {
     "id": "7627eb96-8f66-418c-ad1d-2414f344fd16",
@@ -21,7 +25,9 @@
     "surname": "Olmos",
     "email": "Francojesusolmos@gmail.com",
     "password": "$2a$10$.dTnXtUHp6ammvhi5gvUxu3r7GyU0wBCcQhiW68wFIKZGiMJT5GnK",
-    "role": "user"
+    "role": "user",
+    "age" : "",
+    "phone": ""
   },
   {
     "id": "2821918c-35d5-4c5f-8a05-1feff610c1a0",
@@ -29,6 +35,8 @@
     "surname": "ramirez",
     "email": "ramirezfacundo1996@gmail.com",
     "password": "admin",
-    "role": "admin"
+    "role": "admin",
+    "age" : "",
+    "phone": ""
   }
 ]

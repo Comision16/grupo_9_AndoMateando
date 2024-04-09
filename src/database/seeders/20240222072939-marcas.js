@@ -2,8 +2,9 @@
 
 const productsJSON = require("../../data/products.json");
 
-const marcasDB = productsJSON.map(() => {
+const marcasDB = productsJSON.map((products) => {
   return {
+    name : products.marca,
     createdAt: new Date(),
     updatedAt: new Date(),
   };

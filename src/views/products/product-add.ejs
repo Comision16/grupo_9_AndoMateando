@@ -70,7 +70,7 @@
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
-                      <input name="price" type="number" class="form-control" id="price">
+                      <input name="price" type="number" class="form-control <%= (locals.errors && errors.price) && 'is-invalid' %>" id="price">
                       <label for="price">precio</label>
                     </div>
                     <small class="text-danger ms-2">
@@ -86,18 +86,24 @@
                         <option value="" selected hidden></option>
                         <% materiales.forEach(materials=> { %>
                           <option value="<%= materials.id %>" <%=(locals.old && old.materialsId) &&
-                            old.materialsId==materials.id ? 'selected' : null %>><%= materials.name %>
+                            old.materialsId==materials.id ? 'selected' : null %><%= materials.name %>"
                           </option>
                           <% }) %>
                       </select>
                       <label for="materials">Material</label>
                     </div>
+                    <small class="text-danger ms-2">
+                      <%= (locals.errors && errors.materials) && errors.materials.msg %>
+                    </small>
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
-                      <input name="quantityInStock" type="number" class="form-control" id="quantityInStock">
+                      <input name="quantityInStock" type="number" class="form-control <%= (locals.errors && errors.quantityInStock) && 'is-invalid' %>" id="quantityInStock">
                       <label for="quantityInStock">Cantidad</label>
                     </div>
+                    <small class="text-danger ms-2">
+                      <%= (locals.errors && errors.quantityInStock) && errors.quantityInStock.msg %>
+                    </small>
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating">
@@ -116,21 +122,27 @@
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
-                      <input name="brand" type="text" class="form-control" id="brand">
+                      <input name="brand" type="text" class="form-control <%= (locals.errors && errors.brand) && 'is-invalid' %>" id="brand">
                       <label for="brand">marca</label>
                     </div>
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
-                      <input name="tamanio" type="number" class="form-control" id="tamanio">
+                      <input name="tamanio" type="number" class="form-control <%= (locals.errors && errors.tamanio) && 'is-invalid' %>" id="tamanio">
                       <label for="tamanio">tamaño</label>
                     </div>
+                    <small class="text-danger ms-2">
+                      <%= (locals.errors && errors.tamanio) && errors.tamanio.msg %>
+                    </small>
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
-                      <input name="color" type="text" class="form-control" id="color">
+                      <input name="color" type="text" class="form-control <%= (locals.errors && errors.color) && 'is-invalid' %>" id="color">
                       <label for="color">color</label>
                     </div>
+                    <small class="text-danger ms-2">
+                      <%= (locals.errors && errors.color) && errors.color.msg %>
+                    </small>
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
@@ -139,7 +151,7 @@
                     </div>
                   </div>
                   <div class="col-12 col-md-3 mb-3">
-                    <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
+                    <input name="mainImage" type="file" class="form-control <%= (locals.errors && errors.mainImage) && 'is-invalid' %>" id="mainImage" hidden>
                     <label class="btn btn-lg btn-outline-dark w-100" for="mainImage">Imagen principal</label>
                     <small class="text-danger ms-2">
                       <%= (locals.errors && errors.mainImage) && errors.mainImage.msg %>
@@ -153,10 +165,13 @@
                   <div class="col-12 mb-3">
 
                     <div class="form-floating">
-                      <textarea name="description" class="form-control" id="description"
+                      <textarea name="description" class="form-control <%= (locals.errors && errors.description) && 'is-invalid' %>" id="description"
                         style="height: 150px;"></textarea>
                       <label for="description">Descripción</label>
                     </div>
+                    <small class="text-danger ms-2">
+                      <%= (locals.errors && errors.description) && errors.description.msg %>
+                    </small>
                   </div>
                   <div class="col-12 d-flex gap-4 align-items-center justify-content-between">
 

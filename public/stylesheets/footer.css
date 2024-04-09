@@ -11,6 +11,10 @@ footer {
  
   
 }
+.borde_inferior_footer{
+    margin-top: 30px ;
+    border: 1px solid rgba(0, 0, 0, 0.15);;
+}
 .footer_section_navegacion{
     width:100%;
     
