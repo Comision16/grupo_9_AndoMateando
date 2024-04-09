@@ -26,24 +26,12 @@ module.exports = {
         allowNull: true,
       },
       image: {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-      type: Sequelize.STRING,
-      allowNull: true,
-    
-    },
-    imagenes: {
-      type: Sequelize.STRING,
-      allowNull: false,
-    
-    },
-    quantityInStock: {
->>>>>>> 4a9d987f86edfd75654f7a74809ef676ff8e7233
-=======
->>>>>>> b97b600c6010528ba174cb998bd23efcea2e7d38
         type: Sequelize.STRING,
         allowNull: true,
+      },
+      imagenes: {
+        type: Sequelize.STRING,
+        allowNull: false,
       },
       quantityInStock: {
         type: Sequelize.STRING,
@@ -56,20 +44,10 @@ module.exports = {
       tamanio: {
         type: Sequelize.STRING,
         allowNull: true,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b97b600c6010528ba174cb998bd23efcea2e7d38
       },
       color: {
         type: Sequelize.STRING,
         allowNull: true,
-<<<<<<< HEAD
-=======
-      
->>>>>>> 4a9d987f86edfd75654f7a74809ef676ff8e7233
-=======
->>>>>>> b97b600c6010528ba174cb998bd23efcea2e7d38
       },
       quantityInStock: {
         type: Sequelize.INTEGER,
@@ -113,7 +91,6 @@ module.exports = {
       },
       materialsId: {
         type: Sequelize.INTEGER,
-
         allowNull: true,
         references: {
           model: {
@@ -121,7 +98,6 @@ module.exports = {
           },
         },
       },
-
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
