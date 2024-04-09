@@ -11,13 +11,13 @@ module.exports = processRegister = (req, res) => {
       .then((address) => {
         db.User.create({
           name,
-          lastname,
+          surname,
           email,
           password: hashSync(password.trim(), 10),
           roleId: 2,
           addressId: address.id,
         }).then((user) => {
-          console.log(user);
+          
           return res.redirect("/usuarios/ingreso");
         });
       })

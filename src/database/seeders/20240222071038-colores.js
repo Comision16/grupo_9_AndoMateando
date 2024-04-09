@@ -52,6 +52,30 @@ module.exports = {
           name: "celeste",
           createdAt: new Date(),
           updatedAt: new Date(),
+        },{
+          name: "bronce",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "plateado",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "dorado",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Marron",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Marron Claro",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },{
+          name: "Marron Oscuro",
+          createdAt: new Date(),
+          updatedAt: new Date(),
         },
          {
           name: "Sin Definir ",
