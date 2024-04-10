@@ -67,7 +67,7 @@
                       <%= (locals.errors && errors.category) && errors.category.msg %>
                     </small>
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating ">
                       <input name="price" type="number" class="form-control <%= (locals.errors && errors.price) && 'is-invalid' %>" id="price">
                       <label for="price">precio</label>
@@ -77,6 +77,12 @@
                     </small>
 
                   </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="form-floating ">
+                      <input name="discount" type="number" class="form-control" id="discount" value="0">
+                      <label for="discount">descuento</label>
+                    </div>
+                  </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating">
                       <select name="materialsId"
@@ -85,7 +91,7 @@
                         <option value="" selected hidden></option>
                         <% materiales.forEach(materials=> { %>
                           <option value="<%= materials.id %>" <%=(locals.old && old.materialsId) &&
-                            old.materialsId==materials.id ? 'selected' : null %><%= materials.name %>"
+                            old.materialsId==materials.id ? 'selected' : null %>><%= materials.name %>"
                           </option>
                           <% }) %>
                       </select>
@@ -104,7 +110,7 @@
                       <%= (locals.errors && errors.quantityInStock) && errors.quantityInStock.msg %>
                     </small>
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating">
                       <select name="compatibilitieId"
                         class="form-select <%= (locals.errors && errors.compatibilitieId)  && 'is-invalid'%>"
@@ -119,13 +125,7 @@
                       <label for="Capabilitie">Capacidad</label>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating ">
-                      <input name="brand" type="text" class="form-control <%= (locals.errors && errors.brand) && 'is-invalid' %>" id="brand">
-                      <label for="brand">marca</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mb-3">
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating ">
                       <input name="tamanio" type="number" class="form-control <%= (locals.errors && errors.tamanio) && 'is-invalid' %>" id="tamanio">
                       <label for="tamanio">tamaño</label>
@@ -136,19 +136,30 @@
                   </div>
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
-                      <input name="color" type="text" class="form-control <%= (locals.errors && errors.color) && 'is-invalid' %>" id="color">
-                      <label for="color">color</label>
+                      <input name="brand" type="text" class="form-control <%= (locals.errors && errors.brand) && 'is-invalid' %>" id="brand">
+                      <label for="brand">marca</label>
+                    </div>
+                  </div>
+               
+                  <div class="col-12 col-md-6 mb-3">
+                      <div class="form-floating">
+                      <select name="colorId"
+                        class="form-select <%= (locals.errors && errors.colorId)  && 'is-invalid'%>" id="colorId"
+                        aria-label="Floating label select example">
+                        <option value="" selected hidden></option>
+                        <% colors.forEach(color=> { %>
+                          <option value="<%= color.id %>" <%=(locals.old && old.colorId) &&
+                            old.colorId==color.id ? 'selected' : null %>><%= color.name %>
+                          </option>
+                          <% }) %>
+                      </select>
+                      <label for="color">Colores</label>
                     </div>
                     <small class="text-danger ms-2">
                       <%= (locals.errors && errors.color) && errors.color.msg %>
                     </small>
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating ">
-                      <input name="discount" type="number" class="form-control" id="discount" value="0">
-                      <label for="discount">descuento</label>
-                    </div>
-                  </div>
+                
                   <div class="col-12 col-md-3 mb-3">
                     <input name="mainImage" type="file" class="form-control <%= (locals.errors && errors.mainImage) && 'is-invalid' %>" id="mainImage" hidden>
                     <label class="btn btn-lg btn-outline-dark w-100" for="mainImage">Imagen principal</label>
@@ -172,20 +183,20 @@
                       <%= (locals.errors && errors.description) && errors.description.msg %>
                     </small>
                   </div>
-                  <div class="col-12 d-flex gap-4 align-items-center justify-content-between">
+                  <div class="col-12 d-flex flex-column flex-lg-row gap-4 align-items-center justify-content-between">
 
-                    <div class="row flex-grow-1 px-3">
-                      <div class="border pt-3 col-12 col-lg-3">
+                    <div class="row flex-grow-1 w-100 px-lg-3">
+                      <div class="border pt-3 col-12 col-md-3">
                         <label for="" class="control-label">Imagen principal</label>
                         <hr>
-                        <div id="box-mainImage" class="d-flex justify-content-center align-items-center">
+                        <div id="box-mainImage" class="d-flex flex-column flex-md-row justify-content-center align-items-center">
 
                         </div>
                       </div>
-                      <div class="border pt-3 col-12 col-lg-9">
+                      <div class="border pt-3 col-12 col-md-9">
                         <label for="" class="control-label">Imágenes</label>
                         <hr>
-                        <div id="box-images" class="d-flex justify-content-center align-items-center">
+                        <div id="box-images" class="d-flex flex-column flex-md-row  justify-content-center align-items-center">
 
                         </div>
                       </div>

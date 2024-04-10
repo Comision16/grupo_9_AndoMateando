@@ -109,14 +109,18 @@ const materiales = db.Material.findAll({
 const compatibilities = db.Capabilitie.findAll({
     order: [['name']]
 })
-    Promise.all([resto, categories, typeproductes, materiales,compatibilities])
-    .then(([resto, categories, typeproductes,materiales,compatibilities]) => {
+const colors = db.Color.findAll({
+  order: [['name']]
+})
+    Promise.all([resto, categories, typeproductes, materiales,compatibilities, colors])
+    .then(([resto, categories, typeproductes,materiales,compatibilities, colors]) => {
         return res.render('products/product-edit',{
             ...resto.dataValues,
             categories,
             typeproductes,
             materiales,
-            compatibilities
+            compatibilities,
+            colors
         })
     })
     .catch(error => console.log(error))

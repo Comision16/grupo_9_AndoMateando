@@ -29,10 +29,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: true,
       },
-      imagenes: {
-        type: Sequelize.STRING,
-        allowNull: false,
-      },
       quantityInStock: {
         type: Sequelize.STRING,
         allowNull: true,
@@ -42,10 +38,6 @@ module.exports = {
         allowNull: true,
       },
       tamanio: {
-        type: Sequelize.STRING,
-        allowNull: true,
-      },
-      color: {
         type: Sequelize.STRING,
         allowNull: true,
       },
@@ -62,7 +54,7 @@ module.exports = {
           },
         },
       },
-      colorsId: {
+      colorId: {
         type: Sequelize.INTEGER,
         allowNull: true,
         references: {
