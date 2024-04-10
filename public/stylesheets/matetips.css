@@ -1,27 +1,55 @@
-.matetips_main{
-    padding-bottom: 50px;
+.matetips_main2{
+    padding-bottom: -20px;
+}
+
+.body-matetips{
+    margin: 0px;
+    max-width: 100%;
 }
 .matetips_main-h1{
-font-size: 40px;
+font-size: 0px;
 text-align: center;
+color: var(--verdeOscuro);
 }
 .matetips_main-p{
     padding-left: 10px;
     font-size: 15px;
+   
+    text-align: center;
+    padding: 10px;
+    width: 95%;
 }
 .matetips_main-h4{
+    color: var(--verdeOscuro);
     text-align: center;
     font-size: 25px;
 }
 .matetips_main-ul{
-padding-left: 30px;
+padding: 30px;
 list-style: none;
 }
 .matetips_main-li{
-    color: black;
+    color: var(--verdeOscuro);
     font-size: 23px;
+    text-align: center;
+    padding: 20px;
+    
+    font-size: x-large;
 }
 .matetips_main-ul-p{
     font-size: 15px;
+    max-width: 90%;
 
 }
+.img-matetips{
+    max-width: 100%;
+    height: 95%;
+ align-items: center;
+ border-radius: 30px;
+}
+@media (min-width:415px ) {
+
+}
+@media(min-width: 780px) {}
+@media(min-width: 1900px) {}
+@media(min-width: 2000px) {}
