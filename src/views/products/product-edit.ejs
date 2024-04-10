@@ -68,10 +68,16 @@
                     </small>
 
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating ">
                       <input name="price" type="number" class="form-control" id="price" value="<%= price %>">
                       <label for="price">precio</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="form-floating ">
+                      <input name="discount" type="number" class="form-control" id="discount" value="<%= discount %>">
+                      <label for="discount">descuento</label>
                     </div>
                   </div>
 
@@ -135,26 +141,25 @@
                     </div>
                   </div>
                   <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating ">
-                      <input name="color" type="text" class="form-control" id="color" value="<%= color %>">
-                      <label for="color">color</label>
-                    </div>
+                    <div class="form-floating">
+                    <select name="colorId"
+                      class="form-select <%= (locals.errors && errors.colorId)  && 'is-invalid'%>" id="colorId"
+                      aria-label="Floating label select example">
+                      <option value="" selected hidden></option>
+                      <% colors.forEach(color=> { %>
+                        <option value="<%= color.id %>" <%= colorId==color.id ? 'selected' : null %>><%= color.name %>
+                        </option>
+                        <% }) %>
+                    </select>
+                    <label for="color">Colores</label>
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating ">
-                      <input name="discount" type="number" class="form-control" id="discount" value="<%= discount %>">
-                      <label for="discount">descuento</label>
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-3 mb-3">
-                    <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
-                    <label class="btn btn-lg btn-outline-dark w-100" for="mainImage">Imagen principal</label>
+                  <small class="text-danger ms-2">
+                    <%= (locals.errors && errors.color) && errors.color.msg %>
+                  </small>
                 </div>
-                <div class="col-12 col-md-3 mb-3">
-                  <input  name="images" type="file" class="form-control" id="images" hidden multiple>
-                  <label class="btn btn-lg btn-outline-dark w-100" for="images">Imágenes</label>
-              </div>
+                 
+
+                 
 
                   <div class="col-12 mb-3">
                     <div class="form-floating">
@@ -169,7 +174,40 @@
 
                   </div>
 
-                  <div class="col-12 d-flex justify-content-end mt-4">
+                  <div class="col-12  col-lg-9">
+                    <div class="border d-flex flex-column flex-lg-row gap-2 align-items-center justify-content-between">
+                      <div class="position-relative">
+                        <img id="main-image" width="240px" src="/images/productos/<%= image%>" alt="">
+                        <input type="file" id="change-main-image" hidden onchange="onChangeImageProduct(event, '<%=id%>')">
+                        <label for="change-main-image" class="btn btn-sm btn-success position-absolute bottom-0 end-0"><i class="fa-solid fa-arrows-rotate"></i></label>
+                      </div>
+                      <div id="box-images" class="d-flex flex-column flex-lg-row align-items-center justify-content-between gap-2 w-100">
+                      
+                      <% for(let i = 0; i < 2; i++) { %>
+                        <% if (images[i]) { %>
+                          <div class="position-relative" >
+                            <img width="200px"  src="/images/productos/<%= images[i].file%>" alt="">
+                            <button type="button" onclick="onDeleteImageProduct('<%=images[i].id%>','<%=id%>')" class="btn btn-sm btn-danger position-absolute bottom-0 end-0"><i class="fa-solid fa-trash-can"></i></button>
+
+                          </div>
+                          
+
+                        <% }else{ %>
+                          <div class="position-relative" >
+                            <img width="200px" src="/images/productos/no-image.jpg" alt="">
+                            <input type="file" class="form-control" id="image<%= i %>" hidden onchange="onAddImageProduct(event, '<%=id%>')">
+                          <label for="image<%= i %>" class="btn btn-sm btn-primary position-absolute bottom-0 end-0" style="cursor: pointer;"><i class="fa-solid fa-plus"></i></label>
+                        </div>
+
+                        <% } %>
+                      <% } %>
+                    </div>
+
+                    </div>
+
+                  </div>
+                  <div class="col-12 col-lg-3 d-flex justify-content-center align-items-center mt-4">
+                   
                     <button class="btn btn-lg btn-dark">Guardar cambios</button>
                   </div>
                 </form>
@@ -181,6 +219,7 @@
       </main>
 
       <%- include('../partials/scripts') %>
+      <script src="/js/product.edit.js"></script>
 
   </body>
 
