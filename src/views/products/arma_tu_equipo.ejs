@@ -16,7 +16,7 @@
             <h1 class="arma_tu_equipo_atras_sig-h1"><a href="/productos/arma_tu_equipo2">atras</a></h1>
            <h1 class="arma_tu_equipo_atras_sig-h2"> <a href="/productos/arma_tu_equipo4">siguiente</a></h1>
         </section>
-        <i class="armaTuEquipo-filter fa-sharp fa-solid fa-filter" > filtrar</i>
+        <i class="armaTuEquipo-filter  fa-sharp fa-solid fa-filter" > filtrar</i>
         <%- include('../partials/menu2') %>
           
 
@@ -25,9 +25,9 @@
 <section class="combos_armaTuEquipo">
    
            
-  <div class="combos_menu_destacados-imagenes">
+  <div class="combos_menu_destacados-imagenes-div">
       
-    <%products.filter(product => product.typeproductsId === 2 ).forEach(product => { %>
+    <%products.filter(product => product.typeproductsId === 6 ).forEach(product => { %>
       <a href="/productos/arma_tu_equipo3"></a><%- include('../partials/cardProduct2',{
           product
       }) %>

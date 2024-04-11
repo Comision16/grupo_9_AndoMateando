@@ -134,10 +134,9 @@ align-items: center;
 .icons__container .list-inline-item a:hover i {
   color: #3e6765; /* Cambiamos el color al pasar el mouse por encima */
 }
-@media (max-width: 415px) {
-  .dropdown-menu{
-    display: none;
-  }
+@media (max-width: 400px) {
+
+
 }
 /* Media query para mostrar el icono del menú desplegable en pantallas pequeñas */
 @media (max-width: 768px) {

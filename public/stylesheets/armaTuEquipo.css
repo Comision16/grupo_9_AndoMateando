@@ -7,18 +7,19 @@
     width: 100%;
     text-align: center;
     padding-top: 50px ;
-
+   
 }
 
 .combos_main-section-article img{
     width:200px ;
     height: 240px;
 }
-.combos_armaTuEquipo{
+.combos_menu_destacados-imagenes-div{
     display: flex;
     flex-wrap: wrap;
     flex-direction:row-reverse;
     width: 80%;
+    padding-left: 15%;
 }
 .armaTuEquipo-titulo {
     display: grid;
@@ -47,23 +48,29 @@
 }
 .arma_tu_equipo_atras_sig h1 a{
     text-decoration:none;
+    font-size: 20px;
     color: var(--verdeOscuro);
 }
+
 .arma_tu_equipo_atras_sig-h1{
- font-size: 20px;
+    
  margin: 0px;
- padding-left: 20px;
-    padding-right: 20%;
+ padding-left: 0px;
+    padding-right: 15%;
 }
 .arma_tu_equipo_atras_sig-h2{
-    font-size: 20px;
-    padding: 0px;
-}
    
-@media(min-width:450px ) {
+    margin: 0px;
+    padding-left: 20px;
+       padding-right: 20%;
+   }
+  
+
+
+@media(min-width:400px ) {
     .combos_main{
         max-width: 100%x;
-        width: 100%;
+        width: 70%;
     }
     .armaTuEquipo-titulo-h1 {
         width: 30%;}
@@ -80,22 +87,23 @@
        margin: 20px;
       
     }
-    .combos_armaTuEquipo{
+    .combos_menu_destacados-imagenes-div{
    padding-top: 50px;
-        width: 80%;
+        width: 60%;
     }
     .combos_menu_destacados-imagenes-div{
-        width: 100%;
+        max-width: 70%;
         display: flex;
     }
+   
     .combos_menu_destacados-imagenes-div article{
      
         flex-wrap: wrap;
-        flex-direction:row-reverse;
-        width: 23%;
+        flex-direction:row;
+        width: 45%;
         position: relative;
-        right: -180px;
-        bottom: 270px;
+        left: 160px;
+        bottom: 350px;
     }
     .combos_main-section-img-letra{
         padding-left: 20px;
@@ -109,24 +117,33 @@
 /*letra atras y adelante*/
 
 .arma_tu_equipo_atras_sig-h1{
-    padding-left: 30%;
-  
+    padding-left: 10%;
+    padding-right: 10%;
+   
 
+
+}
+.armaTuEquipo-filter{
+    padding-right: 25%;
+    padding-top: 15px;
 }
 
 
-
-@media(min-width: 780px) {
-
+@media(min-width: 1020px) {
     .combos_menu_destacados-imagenes-div article{
      
-        flex-wrap: wrap;
-        flex-direction:row-reverse;
-        width: 50%;
-        position: relative;
-        left: 250px;
-        bottom: 270px;
+        
+        width: 30%;
     }
+    .arma_tu_equipo_atras_sig-h1{
+        padding-left: 20%;
+        padding-right: 15%;
+       
+    
+    
+    }
+  
+
     .combos_main-section-article img{
         width:200px;
         height: 170px;
@@ -137,22 +154,17 @@
         padding-left: 20px;
     }
 
-    .combos_menu_destacados-imagenes-div a{
-        left: 15px;
+    .combos_menu_destacados-imagenes-div{
+        max-width: 70%;
+        display: flex;
     }
+   
+  
 
     .arma_tu_equipo_atras_sig-h1{
-        padding-left: 20%;
-        padding-right: 65%;    
-    }
-    .armaTuEquipo-titulo-h1 {
-        width: 25%;
-        
-
-    }
-    .arma_tu_equipo_atras_sig h1{
-        
         padding-left: 25%;
-           padding-right: 18%;
-       }
+        padding-right: 40%;    
+    }
+   
+    
 }
