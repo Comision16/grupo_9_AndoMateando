@@ -14,11 +14,10 @@ const router = express.Router();
 
 const {
   detail,
-  mate,
+
   mates_personalizados,
-  set_yerbero,
-  super_combos,
-  termos,
+  
+  
 
   todos_los_productos,
   arma_tu_equipo,
@@ -43,11 +42,10 @@ router
   .get("/todos_productos", todos_los_productos)
 
   .get("/detalle/:id", detail)
-  .get("/mate", mate)
+  
   .get("/mates_personalizados", mates_personalizados)
-  .get("/set_yerbero", set_yerbero)
-  .get("/super_combos", super_combos)
-  .get("/termos", termos)
+
+
   .get("/tuequipo", diseñatuequipo)
   /*admin*/
 

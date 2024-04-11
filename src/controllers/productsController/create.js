@@ -4,9 +4,9 @@ const db = require("../../database/models");
 
 module.exports = (req, res) => {
   const errors = validationResult(req);
-
   const mainImage = req.files.mainImage;
   const images = req.files.images;
+
 
   if (errors.isEmpty()) {
     const {
@@ -28,7 +28,7 @@ module.exports = (req, res) => {
       typeproductsId,
       name,
       brand,
-      categoryId,
+      categoryId ,
       materialsId,
       price,
       color,
@@ -71,26 +71,28 @@ module.exports = (req, res) => {
       });
     }
 
-    const categories = db.Category.findAll({
+    const categories = db.Category.findAll({ 
       order: ["name"],
-      attributes: ["id", "name"],
+      attributes : ['id','name']
     });
     const materiales = db.Material.findAll({ order: ["name"] }); // Obtener todos los materiales
     const compatibilities = db.Capabilitie.findAll({ order: ["name"] }); // Obtener datos de la tabla 4
     const typeproductes = db.Typeproducts.findAll({ order: ["name"] }); // Obtener datos de la tabla 4
-
-    Promise.all([categories, materiales, compatibilities, typeproductes])
-      .then(([categories, materiales, compatibilities, typeproductes]) => {
+    const colors = db.Color.findAll({ order: ["name"] }); // Obtener datos de la tabla 4
+    
+    Promise.all([categories, materiales, compatibilities, typeproductes, colors])
+      .then(([categories, materiales, compatibilities, typeproductes, colors]) => {
         return res.render("products/product-add", {
           categories,
           materiales,
           compatibilities,
           typeproductes,
-          old: req.body,
-          errors: errors.mapped(),
+          colors,
+          old : req.body,
+          errors : errors.mapped()
         });
       })
-
+  
       .catch((error) => console.log(error));
   }
 };

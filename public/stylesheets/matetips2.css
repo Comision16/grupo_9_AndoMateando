@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap");
+
+.neons {
+    margin-top: 0px;
+    text-align: center;
+  }
+  
+  .neons h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      color: #fff;
+      text-shadow: 0 0 10px #00ff11, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 90px #00fff2;
+    }
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
+    }
+  }
+  .p {
+    text-transform: uppercase;
+    letter-spacing: .10px;
+    display: inline-block;
+    
+   
+    padding: 20px;
+    position: relative;
+    top: 18%;
+    left: 50%;
+    width: 60em;
+    margin: 0 0 0 -20em;
+    
+    span {
+  
+      font: 920 6em/1 "Oswald", sans-serif;
+      letter-spacing: 0;
+      padding: .25em 0 .325em;
+      display: block;
+      margin: 0 auto;
+      text-shadow: 0 0 0px rgba(255,255,255,.5);
+  
+  /* Clip Background Image */
+  
+      background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+      -webkit-background-clip: text;
+      background-clip: text;
+  
+  /* Animate Background Image */
+  
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: aitf 80s linear infinite;
+  
+  /* Activate hardware acceleration for smoother animations */
+  
+      -webkit-transform: translate3d(0,0,0);
+      -webkit-backface-visibility: hidden;
+  
+    }
+  }
+  
+  /* Animate Background Image */
+  
+  @-webkit-keyframes aitf {
+    0% { background-position: 0% 100%; }
+    100% { background-position: 100% 100%; }
+  }
+
+
+
+

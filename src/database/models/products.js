@@ -41,7 +41,7 @@ module.exports = (sequelize, DataTypes) => {
       colorId: { type: DataTypes.INTEGER, allowNull: true },
       image: { type: DataTypes.STRING, allowNull: true },
       quantityInStock: { type: DataTypes.STRING, allowNull: true },
-      categoryId: { type: DataTypes.INTEGER, allowNull: true },
+      categoryId: { type: DataTypes.INTEGER, allowNull: false },
       typeproductsId: { type: DataTypes.INTEGER, allowNull: true },
       compatibilitieId: { type: DataTypes.INTEGER, allowNull: true },
       materialsId: { type: DataTypes.INTEGER, allowNull: true },

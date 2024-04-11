@@ -5,9 +5,7 @@ module.exports = [
   check("typeproductsId")
     .notEmpty()
     .withMessage("El tipo de producto es obligatorio"),
-  check("categoryId")
-    .notEmpty()
-    .withMessage("El material de producto es obligatorio"),
+
   check("materialsId").notEmpty().withMessage("La categoría es requerida"),
   check("price").notEmpty().withMessage("El precio es requerido"),
   check("quantityInStock")
@@ -17,8 +15,8 @@ module.exports = [
     .notEmpty()
     .withMessage("La compacidad es requerida"),
   check("brand").notEmpty().withMessage("La marca es requerida"),
-  check("tamanio").notEmpty().withMessage("La tamaño es requerido"),
-  check("colorId").notEmpty().withMessage("El color es requerido"),
+  check("tamanio").notEmpty().withMessage("La tamaño es requerida"),
+  check("colorId").notEmpty().withMessage("El color es requerida"),
   check("discount").notEmpty().withMessage("El descuento es requerida"),
   body("mainImage")
     .custom((value, { req }) => {

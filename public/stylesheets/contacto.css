@@ -1,0 +1,141 @@
+/* Estilos para la estructura del formulario de registro */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  background-color: var(--grisClaro); /* Usando variable de color */
+}
+
+.logo-section-contacto {
+  text-align: center;
+  order: 0;
+  margin-bottom: 0px;
+  margin-left: 30px;
+}
+.logo {
+  margin-left: 80px; /* Ajusta el margen derecho según sea necesario */
+}
+.form-section-contacto{
+  position: relative;
+  margin: 10px;
+}
+.form-section-contacto {
+
+  width: 90%;
+  order: 1;
+  margin: 0px auto 20px auto;
+  background-color: var(--blanco);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  top: 0px ;
+ 
+  
+}
+
+.form-section-contacto:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header-contacto {
+  background-color: var(--verdeOscuro);
+  color: var(--blanco);
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.custom-form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.btn-contacto{
+      background-color: var(--verdeOscuro);
+    color: var(--blanco);
+    border: none;
+    border-radius: 8px;
+    width: 60px;
+    
+    }
+.main-btn:hover {
+  background-color: #23272b;
+}
+.form-control {
+  width: calc(100% - 24px);
+  padding: 12px;
+  border: 1px solid var(--verdeOscuro);
+  border-radius: 8px;
+  margin-right: 0;
+ 
+}
+
+.form-group label {
+  margin-top: 20px;
+  display: block;
+}
+
+.error-message {
+  font-size: 12px;
+  color: #d9534f;
+}
+
+.form-check-input:checked + .form-check-label::before {
+  background-color: var(--verdeOscuro);
+  border-color: var(--verdeOscuro);
+}
+
+.form-check-label {
+  margin-left: 8px;
+  color: var(--verdeOscuro) !important;
+}
+
+.main-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--verdeOscuro);
+  color: var(--blanco);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-top: 20px;
+ 
+}
+
+.main-btn:hover {
+  background-color: #23272b;
+}
+.btn-div-contacto{
+  padding-left: 30%
+} 
+@media(min-width:415px) {
+
+  .form-section-contacto {
+
+    width: 50%;}
+}
+@media(min-width: 780px) {
+.form-section-contacto {
+  width: 25%;
+}
+   
+}
+@media(min-width: 1500px) {
+  .form-section-contacto {
+    width: 50%;
+  }
+}
