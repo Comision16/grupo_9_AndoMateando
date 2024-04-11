@@ -119,10 +119,15 @@ align-items: center;
 .icons__container:hover .dropdown-menu {
   display: block;
 }
+.list-inline{
+  display: flex;
+  flex-direction: row;
 
+}
 /* Estilos para los iconos de usuario y carrito de compras */
 .icons__container .list-inline-item {
-  margin-right: 10px; /* Ajustamos el margen entre los iconos */
+  margin-top: 5px;
+  margin-right: 20px; /* Ajustamos el margen entre los iconos */
 }
 
 .icons__container .list-inline-item i {
@@ -134,12 +139,36 @@ align-items: center;
 .icons__container .list-inline-item a:hover i {
   color: #3e6765; /* Cambiamos el color al pasar el mouse por encima */
 }
-@media (max-width: 400px) {
+@media (min-width: 450px) {
 
+  .abrir-menu {
+    display: none;
+  }
+
+  .nav {
+    position: relative;
+  }
+
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    display: none;
+  }
+
+  .abrir-menu:checked + .nav__links {
+    display: block;
+  }
 
 }
 /* Media query para mostrar el icono del menú desplegable en pantallas pequeñas */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
  
 
   .abrir-menu {

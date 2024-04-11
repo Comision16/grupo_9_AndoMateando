@@ -11,6 +11,21 @@ font-size: 0px;
 text-align: center;
 color: var(--verdeOscuro);
 }
+.video-mate-matetips-section{
+    background-color: aliceblue;
+   margin-left: 40%;
+   max-width: 400px;
+   text-align: center;
+   
+   border-radius: 30px;
+}
+.video-mate-matetips{
+    text-align:center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    
+}
 .matetips_main-p{
     padding-left: 10px;
     font-size: 15px;
