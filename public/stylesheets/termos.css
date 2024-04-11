@@ -78,34 +78,10 @@
 
 .fa-filter {
     color: var(--verdeOscuro);
-    margin-left: 35%;
+   
     margin-bottom: 20px;
 }
-/*atras y siguiente */
-.arma_tu_equipo_atras_sig{
-    text-align: left;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-transform: uppercase;
 
-
-    
-}
-.arma_tu_equipo_atras_sig h1 a{
-    text-decoration:none;
-    color: var(--verdeOscuro);
-}
-.arma_tu_equipo_atras_sig h1 {
- font-size: 20px;
-}
-.arma_tu_equipo_atras_sig-h1{
-    padding-left: 10%;
-    padding-right: 30%;
-   
-
-
-}
 
 @media(min-width:415px) {
     .fa-filter {
@@ -179,17 +155,6 @@
     padding-left: 0px;
     margin: 5px;
 }
-
-/*letra atras y adelante*/
-.arma_tu_equipo_atras_sig-h1{
-    padding-left: 25%;
-    padding-right: 50%;
-   
-
-
-}
-
-
 }
 
 @media(min-width: 780px) {
@@ -211,13 +176,7 @@
         width: 25%;
         
     }
-    .arma_tu_equipo_atras_sig-h1{
-        padding-left: 20%;
-        padding-right: 65%;
-       
-    
-    
-    }
+   
     
     
 }

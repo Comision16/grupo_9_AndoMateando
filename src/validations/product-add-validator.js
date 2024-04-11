@@ -5,8 +5,7 @@ module.exports = [
         .notEmpty().withMessage('El nombre es obligatorio'),
         check('typeproductsId')
         .notEmpty().withMessage('El tipo de producto es obligatorio'),
-    check('categoryId')
-    .notEmpty().withMessage('El material de producto es obligatorio'),
+
     check('materialsId')
         .notEmpty().withMessage('La categoría es requerida'),
     check('price')
@@ -19,7 +18,7 @@ module.exports = [
         .notEmpty().withMessage('La marca es requerida'),
         check('tamanio')
         .notEmpty().withMessage('La tamaño es requerida'),
-        check('color')
+        check('colorId')
         .notEmpty().withMessage('El color es requerida'),
         check('discount')
         .notEmpty().withMessage('El descuento es requerida'),

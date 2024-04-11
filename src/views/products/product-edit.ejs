@@ -23,7 +23,17 @@
               <div class="card-body">
                 <form action="/productos/actualizar/<%= id %>?_method=PUT" class="row" method="POST"
                   enctype="multipart/form-data">
+                
+              
+
+
                   <div class="col-12 col-md-6 mb-3">
+                    <div class="form-floating ">
+                      <input name="name" type="text" class="form-control" id="name" value="<%= name %>">
+                      <label for="name">Nombre</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating">
                       <select name="typeproductsId"
                         class="form-select <%= (locals.errors && errors.typeproductsId)  && 'is-invalid'%>"
@@ -34,54 +44,14 @@
                           </option>
                           <% }) %>
                       </select>
-                      <label for="typeproducts">Producto</label>
+                      <label for="typeproducts">Tipo de producto</label>
                     </div>
                     <small class="text-danger ms-2">
                       <%= (locals.errors && errors.typeproducts) && errors.typeproducts.msg %>
                     </small>
 
                   </div>
-
-
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating ">
-                      <input name="name" type="text" class="form-control" id="name" value="<%= name %>">
-                      <label for="name">Nombre</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating">
-                      <select name="categoryId"
-                        class="form-select <%= (locals.errors && errors.categoryId)  && 'is-invalid'%>" id="categoryId"
-                        aria-label="Floating label select example">
-                        <option value="" selected hidden></option>
-                        <% categories.forEach(category=> { %>
-                          <option value="<%= category.id %>" <%=categoryId==category.id && 'selected' %>><%=
-                              category.name %>
-                          </option>
-                          <% }) %>
-                      </select>
-                      <label for="category">Categoría</label>
-                    </div>
-                    <small class="text-danger ms-2">
-                      <%= (locals.errors && errors.category) && errors.category.msg %>
-                    </small>
-
-                  </div>
                   <div class="col-12 col-md-3 mb-3">
-                    <div class="form-floating ">
-                      <input name="price" type="number" class="form-control" id="price" value="<%= price %>">
-                      <label for="price">precio</label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-3 mb-3">
-                    <div class="form-floating ">
-                      <input name="discount" type="number" class="form-control" id="discount" value="<%= discount %>">
-                      <label for="discount">descuento</label>
-                    </div>
-                  </div>
-
-                  <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating">
                       <select name="materialsId"
                         class="form-select <%= (locals.errors && errors.materialsId)  && 'is-invalid'%>" id="materialsId"
@@ -99,16 +69,50 @@
                     </small>
 
                   </div>
-
                   <div class="col-12 col-md-6 mb-3">
                     <div class="form-floating ">
-                      <input name="quantityInStock" type="number" class="form-control" id="quantityInStock"
-                        value="<%= quantityInStock %>">
-                      <label for="quantityInStock">Cantidad</label>
+                      <input name="brand" type="text" class="form-control" id="brand" value="<%= tamanio %>">
+                      <label for="brand">marca</label>
                     </div>
                   </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="form-floating ">
+                      <input name="price" type="number" class="form-control" id="price" value="<%= price %>">
+                      <label for="price">precio</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="form-floating ">
+                      <input name="discount" type="number" class="form-control" id="discount" value="<%= discount %>">
+                      <label for="discount">descuento</label>
+                    </div>
+                  </div>
+                  <!-- <div class="col-12 col-md-6 mb-3">
+                    <div class="form-floating">
+                      <select name="categoryId"
+                        class="form-select <%= (locals.errors && errors.categoryId)  && 'is-invalid'%>" id="categoryId"
+                        aria-label="Floating label select example">
+                        <option value="" selected hidden></option>
+                        <% categories.forEach(category=> { %>
+                          <option value="<%= category.id %>" <%=categoryId==category.id && 'selected' %>><%=
+                              category.name %>
+                          </option>
+                          <% }) %>
+                      </select>
+                      <label for="category">Categoría</label>
+                    </div>
+                    <small class="text-danger ms-2">
+                      <%= (locals.errors && errors.category) && errors.category.msg %>
+                    </small>
 
-                  <div class="col-12 col-md-6 mb-3">
+                  </div> -->
+
+
+              
+
+     
+
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating">
                       <select name="compatibilitieId"
                         class="form-select <%= (locals.errors && errors.compatibilitieId)  && 'is-invalid'%>" id="compatibilitieId"
@@ -127,20 +131,22 @@
 
                  
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
-                    <div class="form-floating ">
-                      <input name="brand" type="text" class="form-control" id="brand" value="<%= tamanio %>">
-                      <label for="brand">marca</label>
-                    </div>
-                  </div>
+              
 
-                  <div class="col-12 col-md-6 mb-3">
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating ">
                       <input name="tamanio" type="number" class="form-control" id="tamanio" value="<%= tamanio %>">
                       <label for="tamanio">tamaño</label>
                     </div>
                   </div>
-                  <div class="col-12 col-md-6 mb-3">
+                  <div class="col-12 col-md-3 mb-3">
+                    <div class="form-floating ">
+                      <input name="quantityInStock" type="number" class="form-control" id="quantityInStock"
+                        value="<%= quantityInStock %>">
+                      <label for="quantityInStock">Stock</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3 mb-3">
                     <div class="form-floating">
                     <select name="colorId"
                       class="form-select <%= (locals.errors && errors.colorId)  && 'is-invalid'%>" id="colorId"

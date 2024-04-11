@@ -47,7 +47,9 @@
   margin-right: 20px; /* Ajustamos el margen entre el logo y el input de búsqueda */
   text-align: center; /* Centramos horizontalmente el contenido */
 }
-
+.navbar{
+align-items: center;
+}
 .buscar__header {
   width: 40px; /* Ajustamos el ancho del campo de búsqueda */
   height: 40px; /* Hacemos el campo de búsqueda cuadrado */
@@ -132,15 +134,17 @@
 .icons__container .list-inline-item a:hover i {
   color: #3e6765; /* Cambiamos el color al pasar el mouse por encima */
 }
-
-/* Media query para mostrar el icono del menú desplegable en pantallas pequeñas */
-@media (max-width: 768px) {
-  .nav__links {
+@media (max-width: 415px) {
+  .dropdown-menu{
     display: none;
   }
+}
+/* Media query para mostrar el icono del menú desplegable en pantallas pequeñas */
+@media (max-width: 768px) {
+ 
 
   .abrir-menu {
-    display: block;
+    display: none;
   }
 
   .nav {
