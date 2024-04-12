@@ -1,44 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('../partials/head',{ 
-    title: "arma tu equipo"
-}) %>
+<%- include('../partials/head',{ title: "arma tu equipo" }) %>
 
     <body>
         <%- include('../partials/header') %>
-        <main class="home_main">
-          <section class="combos_productos-titulo">
-            <h1 class="combos_productos-titulo-h1">Termo</h1>
-        </section>
-        <i class="fa-sharp fa-solid fa-filter" > filtrar</i>
-        <section class="arma_tu_equipo_atras_sig">
-            <h1 class="arma_tu_equipo_atras_sig-h1"><a href="/productos/arma_tu_equipo2">atras</a></h1>
-           <h1 class="arma_tu_equipo_atras_sig-h1-2"> <a href="/productos/arma_tu_equipo4">siguiente</a></h1>
-        </section>
-        <%- include('../partials/menu2') %>
-          
+            <main class="home_main">
+                <section class="combos_productos-titulo">
+                    <h3 class="combos_productos-titulo-h1 combos_productos-titulo-h1-activo" id="titulo-2" onclick="onGetProductsByCategory(event, 2)">Termos</h3>
+                    <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 1)">Mates</h3>
+                    <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 3)">Yerberos</h3>
+                    <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 4)">Bombillas</h3>
+                    <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 5)">Bolsos</h3>
+                </section>
+              
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <%- include('../partials/menu2') %>
+
+                        </div>
+                        <div class="col-12 col-md-8">
 
 
-<!-- En tu archivo de vista "arma_tu_equipo" -->
-<section class="combos_productos">
-   
-           
-  <div class="combos_menu_destacados-imagenes">
-      
-    <%products.filter(product => product.typeproductsId === 2 ).forEach(product => { %>
-      <a href="/productos/arma_tu_equipo3"></a><%- include('../partials/cardProduct2',{
-          product
-      }) %>
-  <% }) %>
-      </a>
-  </div>
-  
+                            <div class="row" id="show-products">
 
-  
+                                <%products.filter(product=> product.typeproductsId === 2 ).forEach(product => { %>
+                                    <article class="col-12 col-md-6 col-lg-4" style="cursor: pointer;" onclick="onChosen('<%= product.image %>', '<%= product.typeproductsId %>')">
+                                        <div class=" border rounded p-3 mb-4 d-flex flex-column justify-content-between"
+                                            style="height: 380px">
+                                            <img class="img-fluid" height="50%" style="object-fit: cover;"
+                                                src="/images/productos/<%= product.image %>" alt="">
+                                            <h5 class="text-center">
+                                                <%= product.name %>
+                                            </h5>
+                                            <h4 class="text-center">$<%= product.price %>
+                                            </h4>
+                                        </div>
+                                    </article>
+                                    <% }) %>
+
+                            </div>
 
 
-  </section>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <script>
+
+                    const onChosen = (image, category) => {
+                        document.getElementById(`img-${category}`).src = `/images/productos/${image}`
+                        document.getElementById(`titulo-${category}`).classList.add('combos_productos-titulo-h1-activo')
+                    }
+
+                    const onGetProductsByCategory = async (event, idType) => {
+                        try {
+
+                            const titles = document.querySelectorAll('.combos_productos-titulo-h1')
+                            for (let i = 0; i < titles.length; i++) {
+                                titles[i].classList.remove('combos_productos-titulo-h1-activo')
+                            }
+
+                            event.target.classList.add('combos_productos-titulo-h1-activo')
+                            
+
+                            let response = await fetch(`http://localhost:3000/apis/tipos/${idType}/productos`)
+                            let result = await response.json()
+
+                            document.getElementById('show-products').innerHTML = null
+                            result.products.map(product => {
+                                
+                                document.getElementById('show-products').innerHTML+=`
+                                <article class="col-12 col-md-6 col-lg-4" style="cursor: pointer;" onclick="onChosen('${product.image}', '${product.typeproductsId}')">
+                                        <div class=" border rounded p-3 mb-4 d-flex flex-column justify-content-between"
+                                            style="height: 380px">
+                                            <img class="img-fluid" height="50%" style="object-fit: cover;"
+                                                src="/images/productos/${product.image}" alt="">
+                                            <h5 class="text-center">
+                                                ${product.name}
+                                            </h5>
+                                            <h4 class="text-center">$${product.price}
+                                            </h4>
+                                        </div>
+                                    </article>
+                                `
+
+                            })
+
+                            
+                        } catch (error) {
+                            console.log(error)
+                        }
+                    }
+                </script>
+
 
 
             </main>

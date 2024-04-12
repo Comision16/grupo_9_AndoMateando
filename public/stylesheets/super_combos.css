@@ -6,8 +6,10 @@
 .combos_main-section-article {
     width: 100%;
     text-align: center;
-    padding-top: 50px ;
-
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .combos_main-section-article img{

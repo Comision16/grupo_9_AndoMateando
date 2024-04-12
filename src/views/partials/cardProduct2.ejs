@@ -1,11 +1,8 @@
 
-<article class="combos_main-section-article">
-    <img class="combos_main-section-img" src="../images/productos/<%= product.image %>" alt="">
-    <br>
-    <h2 class="combos_main-section-img-letra"><%= product.name %></h2>
-    <div class="combos_main-section-div-letra">
-      <h3 class="combos_main-section-img-letra-h3"> </h3>                    
-      <h4 class="combos_main-section-img-letra-h4">$<%= product.price %></h4>
+<article class="col-12 col-md-6 col-lg-3 ">
+  <div class=" border rounded p-3 mb-4 d-flex flex-column justify-content-between" style="height: 300px">
+    <img class="img-fluid" height="50%" style="object-fit: cover;" src="../images/productos/<%= product.image %>" alt="">
+    <h5 class="text-center"><%= product.name %></h5>
+      <h4 class="text-center">$<%= product.price %></h4>
     </div>
-    <p class="combos_main-section-img-letra-p"><%= product.description %></p>
   </article>

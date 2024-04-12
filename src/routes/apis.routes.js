@@ -5,6 +5,8 @@ const {
   getAllProducts,
   getOneProduct,
   createProduct,
+  getProductsByCategory,
+  getProductsByType,
 } = require("../controllers/apis/productsApiController");
 const {
   getAllUsuarios,
@@ -28,6 +30,8 @@ router.post(
   ]),
   createProduct
 );
+
+router.get('/tipos/:idType/productos', getProductsByType)
 
 router.get("/users/check-email", checkEmail);
 

@@ -150,8 +150,36 @@ const createProduct = async (req, res) => {
   }
 };
 
+const getProductsByType = async (req,res) => {
+  try {
+
+    const {idType} = req.params
+
+    console.log(idType);
+
+    const products = await db.Products.findAll({
+      where : {
+        typeproductsId : idType
+      }
+    })
+
+    
+    return res.status(200).json({
+      ok: true,
+      products,
+    });
+    
+  } catch (error) {
+    return res.status(error.status || 500).json({
+      ok: false,
+      msg: error.message || "Error. Sorry!",
+    });
+  }
+}
+
 module.exports = {
   getAllProducts,
   getOneProduct,
   createProduct,
+  getProductsByType
 };

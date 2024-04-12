@@ -1,21 +1,23 @@
-<article class="card combos_main-section-article">
+<article class="combos_main-section-article">
     <a href="/productos/detalle/<%= products.id %>">
         <img class="card-img-top combos_main-section-img" src="../images/productos/<%= products.image %>" alt="">
     </a>
-    <div class="card-body">
+    <div class="card-body-custom">
+        <% if (products.discount) { %>
+        <span class="badge bg-success"><%= products.discount %>% OFF</span>
+        <% } %>
         <h5 class="card-title combos_main-section-img-letra"><%= products.name %></h5>
         <div class="combos_main-section-div-letra">
-            <h6 class="card-subtitle mb-2 text-muted">Precio:</h6>
+            <h6 class=" text-muted">Precio:</h6>
             <% if (products.discount) { %>
-                <h6 class="card-text"><span class="badge bg-success"><%= products.discount %> OFF</span> $<%= toThousand((products.price - (products.price * products.discount) / 100).toFixed(0)) %></h6>
+                <h4 class=""> $<%= toThousand((products.price - (products.price * products.discount) / 100).toFixed(0)) %></h4>
             <% } else { %>
-                <h6 class="card-text">$<%= toThousand(products.price) %></h6>
+                <h4 class="">$<%= toThousand(products.price) %></h4>
             <% } %>
         </div>
         <p class="card-text combos_main-section-img-letra-p"><%= products.description %></p>
-        <div class="d-flex justify-content-between">
-            <a href="#" class="btn btn-primary buy-now-button">Comprar ahora</a>
-            <a href="#" class="btn btn-secondary buy-now-button">Agregar al carro</a>
+        <div class="d-flex justify-content-center w-100">
+            <a href="#" class=" buy-now-button">Agregar al carrito</a>
         </div>
     </div>
 </article>

@@ -6,13 +6,16 @@
 
 /*titulo*/
 .combos_productos-titulo {
-    display: grid;
+    display: flex;
     place-items: center;
-
+    margin-bottom: 30px;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 30px;
 }
 
 .combos_productos-titulo-h1 {
-    width: 50%;
+    width: 90%;
     text-align: center;
     font-size: 2em;
     color: var(--verdeOscuro);
@@ -20,14 +23,20 @@
     border-radius: 20px;
 }
 
+.combos_productos-titulo-h1-activo {
+    
+    background-color: var(--verdeOscuro);
+    color: white;
+   
+}
+
+
 /*articulos*/
 .combos_menu_destacados-imagenes {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 80%;
-   
-
+    width: 100%;
 }
 
 .combos_main-section-article {
@@ -45,11 +54,11 @@
 
 .combos_main-section-div-letra {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
     text-transform: uppercase;
-    padding-left: 10px;
-
+    /* padding-left: 10px; */
+    margin: 20px 0;
 }
 
 .combos_main-section-img-letra-h3 {
@@ -107,7 +116,19 @@
 
 }
 
-@media(min-width:415px) {
+@media(min-width:768px) {
+
+    .combos_productos-titulo {
+        display: flex;
+        place-items: center;
+        margin-bottom: 30px;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        gap: 15px;
+    }
+    
     .fa-filter {
         
         margin-left: 80%;
@@ -127,22 +148,24 @@
 
     .combos_menu_destacados-imagenes {
        
-        width: 85%;
-        position: relative;
-        padding: 20px 0px 20px 20px;
-        left: 155px;
-        bottom: 400px;
-
+/* width: 100%; */
+       
+/* position: relative; */
+       
+/* padding: 20px 0px 20px 20px; */
+       
+left: 155px;
+       
+bottom: 400px;
     }
 
     .combos_main-section-article {
-        width: 30%;
-        margin: 5px
+        width: 48%;
+        margin: 5px;
     }
 
     .combos_main-section-div-letra {
-        padding-left: 0px;
-    
+        /* padding-left: 0px; */
     }
 
     .combos_main-section-img-letra-h3 {
@@ -158,7 +181,8 @@
 
     }
     .combos_productos-titulo-h1 {
-        width: 30%;}
+        width: 35%;
+        }
     .combos_main-section-img-letra-p {
 
         padding-left: 0px;
@@ -199,17 +223,17 @@
         bottom: 100px;
     }
     .combos_menu_destacados-imagenes {
-       
-        width: 90%;
-        left: 200px;
+       width: 80%;
+       /* left: 200px; */
     }
     .combos_main-section-article{
-        width: 23%;
+        width: 30%;
     }
 
     .combos_productos-titulo-h1 {
-        width: 25%;
-        
+        width: 210px;
+        padding: 10px;
+        cursor: pointer;
     }
     .arma_tu_equipo_atras_sig-h1{
         padding-left: 20%;

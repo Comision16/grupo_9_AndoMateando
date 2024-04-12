@@ -1,79 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<%- include('../partials/head',{
-        
-}) %>
+<%- include('../partials/head',{ }) %>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
-<body class="">
-    <%- include('../partials/header') %>
-<section class="body_armatuequipo">  
-    <div class="containere disable">
-    <h2>Termo</h2>
-    <div class="wrapper">
-        <div class="editor-panel">
-            <div class="filter">
-                <label class="title">Filtros</label>
-                <div class="options">
-                    <button id="brightness" class="active">Brillo</button>
-                    <button id="saturation">Saturación</button>
-                    <button id="inversion">Inversión</button>
-                    <button id="grayscale">Escala de grises</button>
-                </div>
-                <div class="slider">
-                    <div class="filter-info">
-                        <p class="name">Brillo</p>
-                        <p class="value">100%</p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+
+    <body class="">
+        <%- include('../partials/header') %>
+            <section class="body_armatuequipo">
+                <div class="containere disable">
+                    <h2>Termo</h2>
+                    <div class="wrapper">
+                        <div class="editor-panel">
+                            <div class="filter">
+                                <label class="title">Filtros</label>
+                                <div class="options">
+                                    <button id="brightness" class="active">Brillo</button>
+                                    <button id="saturation">Saturación</button>
+                                    <button id="inversion">Inversión</button>
+                                    <button id="grayscale">Escala de grises</button>
+                                </div>
+                                <div class="slider">
+                                    <div class="filter-info">
+                                        <p class="name">Brillo</p>
+                                        <p class="value">100%</p>
+                                    </div>
+                                    <input type="range" value="100" min="0" max="200">
+                                </div>
+                            </div>
+                            <div class="rotate">
+                                <label class="title">Rotar, Voltear, Alto y Ancho </label>
+                                <div class="options">
+                                    <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
+                                    <button id="vertical"><i class='bx bx-reflect-horizontal'></i></button>
+                                    <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
+                                    <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
+                                    <button id="increase-height" class="fa-regular fa-plus"></button>
+                                    <button id="decrease-height" class="fa-solid fa-minus"></button>
+                                    <button id="increase-width" class="fa-solid fa-minus"></button>
+                                    <button id="decrease-width" class="fa-regular fa-plus"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="preview-img contendero1">
+                            <div class="container ">
+
+                                <div class="contenedor ">
+
+                                    <canvas id="lienzo"></canvas>
+
+                                </div>
+
+
+                                <!-- AQUÍ SE DEBE COLOCAR LA IMAGEN POR DEFECTO, QUE CADA CUAL TENDRÁ QUE BUSCARSE LA SUYA PROPIA -->
+
+                                <img src="../images/tu_equipo/agregar-imagen.png" alt="imagen previa" alin>
+                            </div>
+
+                        </div>
+
                     </div>
-                    <input type="range" value="100" min="0" max="200">
+                    <div class="controls">
+                        <button class="reset-filter">Restablecer Filtros</button>
+                        <div class="row">
+                            <input type="file" class="file-input" accept="image/*" hidden>
+                            <button class="choose-img">Seleccionar Imagen</button>
+                            <button class="save-img">Guardar Imagen</button>
+                        </div>
+                    </div>
+
                 </div>
-            </div>
-            <div class="rotate">
-                <label class="title">Rotar, Voltear, Alto y Ancho </label>
-                <div class="options">
-                    <button id="horizontal"><i class='bx bx-reflect-vertical'></i></button>
-                    <button id="vertical"><i class='bx bx-reflect-horizontal'></i></button>
-                    <button id="left"><i class="fa-solid fa-rotate-left"></i></button>
-                    <button id="right"><i class="fa-solid fa-rotate-right"></i></button>
-                    <button id="increase-height" class="fa-regular fa-plus"></button>
-                    <button id="decrease-height" class="fa-solid fa-minus"></button>
-                    <button id="increase-width" class="fa-solid fa-minus"></button>
-                    <button id="decrease-width" class="fa-regular fa-plus"></button>
-                </div>
-            </div>
-        </div>
-        <div class="preview-img contendero1">
-            <div class="container ">
-               
-                <div class="contenedor " >
-                   
-                    <canvas id="lienzo"></canvas>
-          
-                  </div>
-            
-                
-            <!-- AQUÍ SE DEBE COLOCAR LA IMAGEN POR DEFECTO, QUE CADA CUAL TENDRÁ QUE BUSCARSE LA SUYA PROPIA -->
-           
-            <img src="../images/tu_equipo/agregar-imagen.png" alt="imagen previa" alin>
-        </div>
-       
-    </div>
- 
-    </div>
-    <div class="controls">
-        <button class="reset-filter">Restablecer Filtros</button>
-        <div class="row">
-            <input type="file" class="file-input" accept="image/*" hidden>
-            <button class="choose-img">Seleccionar Imagen</button>
-            <button class="save-img">Guardar Imagen</button>
-        </div>
-    </div>
-    
-</div>
-</section>
-<!--
+            </section>
+            <!--
 <section class="body_armatuequipo"> 
     <div class="containere disable">
     <h2>Mate</h2>
@@ -138,7 +137,8 @@
 </div></section>
    
 -->
-    <script src="/js/index.js"></script>
-  
-</body>
+            <script src="/js/index.js"></script>
+
+    </body>
+
 </html>
