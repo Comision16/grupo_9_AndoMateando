@@ -27,7 +27,7 @@ const controller = {
     }
 
     db.Products.findAll({
-      include : ["category", "materials", "capabilitie", "typeproducts" ],
+      include : ["category", "materials", "capabilitie", "typeproducts",'colors' ],
       ...options
 
   }
@@ -48,7 +48,7 @@ const controller = {
     const productId = req.params.id;
    
   db.Products.findByPk(productId, {
-    include : ['category', 'materials','capabilitie','typeproducts']
+    include : ['category', 'materials','capabilitie','typeproducts','colors']
 
   })
     .then(products => {
@@ -63,82 +63,17 @@ const controller = {
     .catch(error => console.log(error));
 },
 
-
-  mate: (req, res) => {
-    db.Products.findAll(
-      {
-        include : ['category', ]
-    }
-      )
-    
-      .then((products) => {
-        return res.render("products/mate", {
-          products,
-          toThousand,
-        });
-      })
-      .catch((error) => console.log(error)); 
-    
-  },
   mates_personalizados: (req, res) => {
     return res.render("products/mates_personalizados");
   },
-  set_yerbero: (req, res) => {
-    db.Products.findAll(
-      {
-        include : ['category', ]
-    }
-       )
-     
-       .then((products) => {
-         return res.render("products/set_yerbero", {
-           products,
-           toThousand,
-         });
-       })
-       .catch((error) => console.log(error));
-
-  },
-
-  super_combos: (req, res) => {
-    db.Products.findAll(
-      {
-        include : ['category', ]
-    }
-       )
-
-       .then((products) => {
-         return res.render("products/super_combos", {
-           products,
-           toThousand,
-         });
-       })
-       .catch((error) => console.log(error)); 
-  },
-
-  termos: (req, res) => {
-    db.Products.findAll(
-      {
-        include : ['category', ]
-    }
-       )
-     
-       .then((products) => {
-         return res.render("products/termos", {
-           products,
-           toThousand,
-         });
-       })
-       .catch((error) => console.log(error)); 
-  
-  },
+   
 
   arma_tu_equipo: (req, res) => {
    
    
     db.Products.findAll(
       {
-        include : ['category', 'materials','capabilitie','typeproducts' ]
+        include : ['category', 'materials','capabilitie','typeproducts','colors' ]
     }
        )
      
@@ -159,7 +94,7 @@ const controller = {
   arma_tu_equipo2: (req, res) => {
     db.Products.findAll(
       {
-        include : ['category', 'materials','capabilitie','typeproducts' ]
+        include : ['category', 'materials','capabilitie','typeproducts','colors' ]
     }
        )
      
@@ -177,7 +112,7 @@ const controller = {
   arma_tu_equipo3: (req, res) => {
     db.Products.findAll(
       {
-        include : ['category', 'materials','capabilitie','typeproducts' ]
+        include : ['category', 'materials','capabilitie','typeproducts','colors' ]
     }
        )
      
@@ -193,7 +128,7 @@ const controller = {
   arma_tu_equipo4: (req, res) => {
     db.Products.findAll(
       {
-        include : ['category', 'materials','capabilitie','typeproducts' ]
+        include : ['category', 'materials','capabilitie','typeproducts','colors' ]
     }
        )
      
@@ -210,7 +145,7 @@ const controller = {
   arma_tu_equipo5: (req, res) => {
     db.Products.findAll(
       {
-        include : ['category', 'materials','capabilitie','typeproducts' ]
+        include : ['category', 'materials','capabilitie','typeproducts','colors' ]
     }
        )
      
@@ -227,7 +162,7 @@ const controller = {
   diseñatuequipo: (req, res) => {
     db.Products.findAll(
       {
-        include : ['category', 'materials','capabilitie','typeproducts' ]
+        include : ['category', 'materials','capabilitie','typeproducts','colors' ]
     }
        )
      

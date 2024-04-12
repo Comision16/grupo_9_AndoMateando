@@ -223,8 +223,10 @@ bottom: 400px;
         bottom: 100px;
     }
     .combos_menu_destacados-imagenes {
-       width: 80%;
-       /* left: 200px; */
+       
+width: 80%;
+       
+/* left: 200px; */
     }
     .combos_main-section-article{
         width: 30%;

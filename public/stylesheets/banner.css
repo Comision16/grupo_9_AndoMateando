@@ -1,5 +1,6 @@
 /* Estilos para el video del banner */
 .video-fluid {
+  padding-top:30px ;
   width: 100%;
   height: auto;
 }

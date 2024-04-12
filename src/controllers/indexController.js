@@ -46,7 +46,7 @@ module.exports = {
   },
   admin: (req, res) => {
     db.Products.findAll({
-      include: ["category", "materials", "capabilitie", "typeproducts"],
+      include: ["category", "materials", "capabilitie", "typeproducts","colors"],
     })
       .then((products) => {
         //return res.send(products)

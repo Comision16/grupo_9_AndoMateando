@@ -2,6 +2,10 @@
   margin: 0px;
   padding: 0px;
 }
+body{
+  margin: 0px;
+  padding: 0px;
+}
 :root {
   /* colores*/
   --grisClaro: #d9e2d5;
@@ -11,6 +15,3 @@
 }
 
 
-main{
-      margin-top: 40px;
-      } 

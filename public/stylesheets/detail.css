@@ -106,14 +106,22 @@
 }
 
 .envio__info button {
-color: #fff;
-padding: 10px;
-background-color: var(--verdeOscuro);
-cursor: pointer;
-border-radius: 5px;
-/* width: 10%; */
-font-size: 1em;
-border: solid 10px var(--verdeOscuro)
+
+color: #fff;
+
+padding: 10px;
+
+background-color: var(--verdeOscuro);
+
+cursor: pointer;
+
+border-radius: 5px;
+
+/* width: 10%; */
+
+font-size: 1em;
+
+border: solid 10px var(--verdeOscuro)
 }
 .agregar__carrito {
   background-color: var(--verdeOscuro);
