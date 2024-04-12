@@ -43,13 +43,9 @@
                         $ <%= products.price %>
                     </p>
                     <% } %>
-                <label for="cantidad">Cantidad:</label>
-                <input type="number" id="cantidad" name="cantidad" value="1" min="1">
-                <button class="agregar__carrito"> <i class="fas fa-shopping-cart"></i></button>
                 <div class="combos_main-section-div-letra">
-                    <h2  href="#" class="buy-now-button">COMPRAR AHORA</h2>
 
-                    <h2 href="#" class="buy-now-button">AGREGAR AL CARRO</h2>
+                    <button onclick="addToCart('<%= products.id %>', '<%= products.name %>', '<%= products.price - (products.price * products.discount) / 100 %>', '<%= products.image %>')" class="buy-now-button">AGREGAR AL CARRITO</button>
                 </div>
                 <div class="envio__info">
                     <p>¡Envío gratis para compras mayores a $35.00!</p>

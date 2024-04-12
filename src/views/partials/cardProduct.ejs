@@ -17,7 +17,7 @@
         </div>
         <p class="card-text combos_main-section-img-letra-p"><%= products.description %></p>
         <div class="d-flex justify-content-center w-100">
-            <a href="#" class=" buy-now-button">Agregar al carrito</a>
+            <button onclick="addToCart('<%= products.id %>', '<%= products.name %>', '<%= products.price - (products.price * products.discount) / 100 %>', '<%= products.image %>')" class=" buy-now-button text-white" style="text-decoration: none;" >Agregar al carrito</button>
         </div>
     </div>
 </article>

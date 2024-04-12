@@ -6,112 +6,21 @@
 <body>
     <%- include('./partials/header') %>
     <main class="productcart__main">
-        <section class="section__main">
-            <article class="productcart__article">
-                <div class="article__img__box">
-                    <img class="article__img" src="images/producto1.jpg" width="200" alt="imgagen del producto">
-                </div>
-
-            
-                <div class="article__individual">
-                    <h1 class="article__titulo-car" >mate</h1>
-                    <h2 class="article__description" >descripción del producto</h2>
-                   <div class="div_color_carrito">
-                    <p class="article__color" >Color :</p>
-                    <p class="article__aviable" >rojo | azul | verde</p>
-                </div>
-                </div>
-       
-            
-               
-          <div  class="article__individual2">
-          <p class="article__aviable" >Disponible</p>
-            <div class="article__relative">
-                    <p class="article__numero">cantidad</p>
-                    <i class="fa-solid fa-minus"></i>
-                    <p class="article__numero">2</p>
-                    <i class="fa-solid fa-plus"></i>
-                   
-         </div>
-         <div class="article__relative">
-            <p class="article__borrar">Borrar</p>
-            <i class="fa-solid fa-trash"></i>
-         </div>
-                <p class="article__price" >total : $49.99</p>
-                <button class="button-pagar" name="pagar">pagar</button>
-            </div>
-           
-            </article>
-            <article class="productcart__article">
-                <div class="article__img__box">
-                    <img class="article__img" src="images/producto1.jpg" width="200" alt="imgagen del producto">
-                </div>
-
-            
-                <div class="article__individual">
-                    <h1 class="article__titulo-car" >mate</h1>
-                    <h2 class="article__description" >descripción del producto</h2>
-                   <div class="div_color_carrito">
-                    <p class="article__color" >Color :</p>
-                    <p class="article__aviable" >rojo | azul | verde</p>
-                </div>
-                </div>
-       
-            
-               
-          <div  class="article__individual2">
-          <p class="article__aviable" >Disponible</p>
-            <div class="article__relative">
-                    <p class="article__numero">cantidad</p>
-                    <i class="fa-solid fa-minus"></i>
-                    <p class="article__numero">2</p>
-                    <i class="fa-solid fa-plus"></i>
-                   
-         </div>
-         <div class="article__relative">
-            <p class="article__borrar">Borrar</p>
-            <i class="fa-solid fa-trash"></i>
-         </div>
-                <p class="article__price" >total : $49.99</p>
-                <button class="button-pagar" name="pagar">pagar</button>
-            </div>
-           
-            </article>
-            <article class="productcart__article">
-                <div class="article__img__box">
-                    <img class="article__img" src="images/producto1.jpg" width="200" alt="imgagen del producto">
-                </div>
-
-            
-                <div class="article__individual">
-                    <h1 class="article__titulo-car" >mate</h1>
-                    <h2 class="article__description" >descripción del producto</h2>
-                   <div class="div_color_carrito">
-                    <p class="article__color" >Color :</p>
-                    <p class="article__aviable" >rojo | azul | verde</p>
-                </div>
-                </div>
-       
-            
-               
-          <div  class="article__individual2">
-          <p class="article__aviable" >Disponible</p>
-            <div class="article__relative">
-                    <p class="article__numero">cantidad</p>
-                    <i class="fa-solid fa-minus"></i>
-                    <p class="article__numero">2</p>
-                    <i class="fa-solid fa-plus"></i>
-                   
-         </div>
-         <div class="article__relative">
-            <p class="article__borrar">Borrar</p>
-            <i class="fa-solid fa-trash"></i>
-         </div>
-                <p class="article__price" >total : $49.99</p>
-                <button class="button-pagar" name="pagar">pagar</button>
-            </div>
-           
-            </article> 
+        <section style="max-width: 1200px;">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="2">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Subtotal</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody id="cart-box">
+                 
+              
+                </tbody>
+              </table>
            
         </section>
     </main>

@@ -11,7 +11,7 @@
                     <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 1)">Mates</h3>
                     <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 3)">Yerberos</h3>
                     <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 4)">Bombillas</h3>
-                    <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 5)">Bolsos</h3>
+                    <h3 class="combos_productos-titulo-h1" onclick="onGetProductsByCategory(event, 6)">Bolsos</h3>
                 </section>
               
                 <div class="container">
@@ -26,7 +26,7 @@
                             <div class="row" id="show-products">
 
                                 <%products.filter(product=> product.typeproductsId === 2 ).forEach(product => { %>
-                                    <article class="col-12 col-md-6 col-lg-4" style="cursor: pointer;" onclick="onChosen('<%= product.image %>', '<%= product.typeproductsId %>')">
+                                    <article class="col-12 col-md-6 col-lg-4" style="cursor: pointer;" onclick="onChosen('<%= product.image %>', '<%= product.typeproductsId %>','<%= product.id %>','<%= product.price - (product.price * product.discount) / 100 %>','<%= product.name %>')">
                                         <div class=" border rounded p-3 mb-4 d-flex flex-column justify-content-between"
                                             style="height: 380px">
                                             <img class="img-fluid" height="50%" style="object-fit: cover;"
@@ -53,9 +53,46 @@
 
                 <script>
 
-                    const onChosen = (image, category) => {
-                        document.getElementById(`img-${category}`).src = `/images/productos/${image}`
-                        document.getElementById(`titulo-${category}`).classList.add('combos_productos-titulo-h1-activo')
+                    window.onload = () => {
+                        let setProducts = sessionStorage.getItem('setProductsMeteando')
+                        if(!setProducts) sessionStorage.setItem('setProductsMeteando', JSON.stringify([]))
+                    }
+
+                    const onChosen = (image, type, idProduct, price, name) => {
+                        
+                        document.getElementById(`img-${type}`).src = `/images/productos/${image}`
+                        let setProducts = JSON.parse(sessionStorage.getItem('setProductsMeteando'));
+                        
+                        const productType = setProducts.find(product => product.type == type)
+
+                        if(productType) {
+                            const setProductsUpdated = setProducts.map(product => {
+                                if(product.type == type) {
+                                    product.image = image,
+                                    product.price = price,
+                                    id = idProduct
+                                }
+                                return product
+                            })
+                            sessionStorage.setItem('setProductsMeteando', JSON.stringify(setProductsUpdated))
+
+                        }else {
+                            setProducts.push({
+                            id : idProduct,
+                            type,
+                            image,
+                            price,
+                            name
+                        })
+                        sessionStorage.setItem('setProductsMeteando', JSON.stringify(setProducts))
+
+                        }
+
+                     
+                        setProducts = JSON.parse(sessionStorage.getItem('setProductsMeteando'));
+
+                        
+                        if(setProducts.length == 5) document.getElementById('btn-send-cart').classList.remove('disabled')
                     }
 
                     const onGetProductsByCategory = async (event, idType) => {
@@ -76,7 +113,7 @@
                             result.products.map(product => {
                                 
                                 document.getElementById('show-products').innerHTML+=`
-                                <article class="col-12 col-md-6 col-lg-4" style="cursor: pointer;" onclick="onChosen('${product.image}', '${product.typeproductsId}')">
+                                <article class="col-12 col-md-6 col-lg-4" style="cursor: pointer;" onclick="onChosen('${product.image}', '${product.typeproductsId}','${product.id}','${product.price - (product.price * product.discount) / 100}','${product.name}')">
                                         <div class=" border rounded p-3 mb-4 d-flex flex-column justify-content-between"
                                             style="height: 380px">
                                             <img class="img-fluid" height="50%" style="object-fit: cover;"
@@ -96,6 +133,24 @@
                         } catch (error) {
                             console.log(error)
                         }
+                    }
+
+
+                    const addProductsInCart = () => {
+
+                        let setProducts = JSON.parse(sessionStorage.getItem('setProductsMeteando'));
+
+                        if(setProducts.length == 5){
+                            setProducts.forEach(({id, name, image, price}) => {
+                            addToCart(id , name, price, image)
+                            sessionStorage.setItem('setProductsMeteando', JSON.stringify([]))
+                            document.getElementById('btn-send-cart').classList.add('disabled')
+                        });
+                        }
+                      
+
+                        
+
                     }
                 </script>
 

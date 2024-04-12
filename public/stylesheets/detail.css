@@ -42,7 +42,7 @@
   list-style: none;
 }
 .info__producto button:hover {
-  background-color: var(--color-verdeOscuro);
+  /* background-color: var(--color-verdeOscuro); */
 }
 
 .info__producto h2 {

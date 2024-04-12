@@ -27,7 +27,6 @@ module.exports = {
   },
   cart: (req, res) => {
     return res.render("productCart", {
-      products,
       toThousand,
     });
   },
